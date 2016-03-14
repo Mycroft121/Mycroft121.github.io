@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-13T08:58:00.091Z</updated>
+  <updated>2016-03-14T11:32:46.830Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>3.14笔记</title>
+    <link href="http://yoursite.com/2016/03/14/3-14%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/03/14/3-14笔记/</id>
+    <published>2016-03-14T11:31:15.000Z</published>
+    <updated>2016-03-14T11:32:46.830Z</updated>
+    
+    <content type="html">&lt;p&gt;a 链接 herf 页面地址的话 (跳转页面)&lt;br&gt;a 链接 压缩包 (下载)&lt;br&gt;  herf 写的是id的话，点击之后会直接跳转到id所在位置&lt;/p&gt;
+&lt;p&gt;target=”_blank” 新窗口打开&lt;br&gt;target=”_self” 当前窗口打开&lt;/p&gt;
+&lt;p&gt;常见标签 section header nav footer ul ol img dt,dd(自定义列表)&lt;/p&gt;
+&lt;p&gt;选择器 id选择器 class选择器 类型选择器 包含选择器 群组选择器 通配符选择器&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      标签 选择器
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>the blog about</title>
