@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-14T11:32:46.830Z</updated>
+  <updated>2016-03-15T13:21:32.250Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>3.15块和内嵌</title>
+    <link href="http://yoursite.com/2016/03/15/3-15%E5%9D%97%E5%92%8C%E5%86%85%E5%B5%8C/"/>
+    <id>http://yoursite.com/2016/03/15/3-15块和内嵌/</id>
+    <published>2016-03-15T13:07:26.000Z</published>
+    <updated>2016-03-15T13:21:32.250Z</updated>
+    
+    <content type="html">&lt;p&gt;选择器的优先级:行间样式&amp;gt;id&amp;gt;class&amp;gt;类型选择器&amp;gt;通配符&lt;br&gt;块：&lt;br&gt;    1.独占一行&lt;br&gt;    2.支持所有模式&lt;br&gt;    3.不设置宽度的时候，宽度撑满整行&lt;br&gt;内嵌：&lt;br&gt;    1.可以在一行显示&lt;br&gt;    2.不支持狂傲，上下的margin和padding都有问题&lt;br&gt;    3.宽度由内容撑开&lt;br&gt;    4.代码换行会被解析&lt;/p&gt;
+&lt;p&gt;补充：对于表单的居中显示，可以采用表格table来布局，然后采用text-align，对于外联样式，名字应该相对应的具体一点，在设计网页的时候，把每一块单独定义，取一个id，这样在css设置的时候带上id+相应的class或选择器，使其不会对后续的css产生影响，千万别用标签选择器，除非相应的样式确实一样，比如前一个table在article中，后一个早aside中，那前一个就写成#article table，后一个写成#aside table，这样单独定义，不会产生混乱。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      块和内嵌
+    
+    </summary>
+    
+    
+      <category term="inline and bloke" scheme="http://yoursite.com/tags/inline-and-bloke/"/>
+    
+  </entry>
   
   <entry>
     <title>3.14笔记</title>

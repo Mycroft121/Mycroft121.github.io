@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="inline and bloke," />
 
 
 
@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="标签 选择器">
+<meta name="description" content="块和内嵌">
 <meta property="og:type" content="article">
-<meta property="og:title" content="3.14笔记">
-<meta property="og:url" content="http://yoursite.com/2016/03/14/3-14笔记/index.html">
+<meta property="og:title" content="3.15块和内嵌">
+<meta property="og:url" content="http://yoursite.com/2016/03/15/3-15块和内嵌/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="标签 选择器">
-<meta property="og:updated_time" content="2016-03-14T11:32:46.830Z">
+<meta property="og:description" content="块和内嵌">
+<meta property="og:updated_time" content="2016-03-15T13:21:32.250Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="3.14笔记">
-<meta name="twitter:description" content="标签 选择器">
+<meta name="twitter:title" content="3.15块和内嵌">
+<meta name="twitter:description" content="块和内嵌">
 
 
 
@@ -86,7 +86,7 @@
   };
 </script>
 
-  <title> 3.14笔记 | Hexo </title>
+  <title> 3.15块和内嵌 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +206,7 @@
             
             
               
-                3.14笔记
+                3.15块和内嵌
               
             
           </h1>
@@ -218,8 +218,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-14T19:31:15+08:00" content="2016-03-14">
-              2016-03-14
+            <time itemprop="dateCreated" datetime="2016-03-15T21:07:26+08:00" content="2016-03-15">
+              2016-03-15
             </time>
           </span>
 
@@ -245,10 +245,8 @@
       
 
       
-        <p>a 链接 herf 页面地址的话 (跳转页面)<br>a 链接 压缩包 (下载)<br>  herf 写的是id的话，点击之后会直接跳转到id所在位置</p>
-<p>target=”_blank” 新窗口打开<br>target=”_self” 当前窗口打开</p>
-<p>常见标签 section header nav footer ul ol img dt,dd(自定义列表)</p>
-<p>选择器 id选择器 class选择器 类型选择器 包含选择器 群组选择器 通配符选择器</p>
+        <p>选择器的优先级:行间样式&gt;id&gt;class&gt;类型选择器&gt;通配符<br>块：<br>    1.独占一行<br>    2.支持所有模式<br>    3.不设置宽度的时候，宽度撑满整行<br>内嵌：<br>    1.可以在一行显示<br>    2.不支持狂傲，上下的margin和padding都有问题<br>    3.宽度由内容撑开<br>    4.代码换行会被解析</p>
+<p>补充：对于表单的居中显示，可以采用表格table来布局，然后采用text-align，对于外联样式，名字应该相对应的具体一点，在设计网页的时候，把每一块单独定义，取一个id，这样在css设置的时候带上id+相应的class或选择器，使其不会对后续的css产生影响，千万别用标签选择器，除非相应的样式确实一样，比如前一个table在article中，后一个早aside中，那前一个就写成#article table，后一个写成#aside table，这样单独定义，不会产生混乱。</p>
 
       
     </div>
@@ -261,22 +259,24 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/inline-and-bloke/" rel="tag">#inline and bloke</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/13/the-blog-about/" rel="next" title="the blog about">
-                <i class="fa fa-chevron-left"></i> the blog about
+              <a href="/2016/03/14/3-14笔记/" rel="next" title="3.14笔记">
+                <i class="fa fa-chevron-left"></i> 3.14笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/15/3-15块和内嵌/" rel="prev" title="3.15块和内嵌">
-                3.15块和内嵌 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
