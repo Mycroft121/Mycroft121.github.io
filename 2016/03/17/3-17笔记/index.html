@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="inline and bloke," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="块和内嵌">
+<meta name="description" content="定位补充、表格表单">
 <meta property="og:type" content="article">
-<meta property="og:title" content="3.15块和内嵌">
-<meta property="og:url" content="http://yoursite.com/2016/03/15/3-15块和内嵌/index.html">
+<meta property="og:title" content="3.17笔记">
+<meta property="og:url" content="http://yoursite.com/2016/03/17/3-17笔记/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="块和内嵌">
-<meta property="og:updated_time" content="2016-03-15T13:21:32.250Z">
+<meta property="og:description" content="定位补充、表格表单">
+<meta property="og:updated_time" content="2016-03-17T14:11:36.251Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="3.15块和内嵌">
-<meta name="twitter:description" content="块和内嵌">
+<meta name="twitter:title" content="3.17笔记">
+<meta name="twitter:description" content="定位补充、表格表单">
 
 
 
@@ -86,7 +86,7 @@
   };
 </script>
 
-  <title> 3.15块和内嵌 | Hexo </title>
+  <title> 3.17笔记 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +206,7 @@
             
             
               
-                3.15块和内嵌
+                3.17笔记
               
             
           </h1>
@@ -218,8 +218,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T21:07:26+08:00" content="2016-03-15">
-              2016-03-15
+            <time itemprop="dateCreated" datetime="2016-03-17T22:01:07+08:00" content="2016-03-17">
+              2016-03-17
             </time>
           </span>
 
@@ -245,8 +245,12 @@
       
 
       
-        <p>选择器的优先级:行间样式&gt;id&gt;class&gt;类型选择器&gt;通配符<br>块：<br>    1.独占一行<br>    2.支持所有模式<br>    3.不设置宽度的时候，宽度撑满整行<br>内嵌：<br>    1.可以在一行显示<br>    2.不支持狂傲，上下的margin和padding都有问题<br>    3.宽度由内容撑开<br>    4.代码换行会被解析</p>
-<p>补充：对于表单的居中显示，可以采用表格table来布局，然后采用text-align，对于外联样式，名字应该相对应的具体一点，在设计网页的时候，把每一块单独定义，取一个id，这样在css设置的时候带上id+相应的class或选择器，使其不会对后续的css产生影响，千万别用标签选择器，除非相应的样式确实一样，比如前一个table在article中，后一个早aside中，那前一个就写成#article table，后一个写成#aside table，这样单独定义，不会产生混乱。</p>
+        <p>绝对定位的特征<br>    a、使元素完全脱离文档流；<br>    b、使内嵌支持宽高；<br>    c、块属性标签内容撑开宽度；<br>    d、如果有定位父级相对于定位父级发生偏移，没有定位父级相对于document发生偏移；<br>    e、相对定位一般都是配合绝对定位元素使用的；<br>    f、提升层级</p>
+<p>表格样式重置<br>table{border-collapse:collapse;} 单元格间隙合并<br>th,td{padding:0;}重置单元格默认填充</p>
+<p>label  标签为 input 元素定义标注<br>    <input type="checkbox" name="" id="a"><br>    <label for="a">……</label></p>
+<p>checked  在页面加载时默认选定的 input 元素。<br>    <input type="checkbox" name="" checked></p>
+<p>disabled  属性规定应该禁用 input 元素。<br>    <input type="checkbox" name="" disabled></p>
+<p>记录，对于div布局，如果是一个div在左，一个在右，之间是一块内容，用浮动的话，div先写，然后内容块最后做补充，具体看任务三。</p>
 
       
     </div>
@@ -259,28 +263,18 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/inline-and-bloke/" rel="tag">#inline and bloke</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/14/3-14笔记/" rel="next" title="3.14笔记">
-                <i class="fa fa-chevron-left"></i> 3.14笔记
+              <a href="/2016/03/16/3-16笔记/" rel="next" title="3.16笔记">
+                <i class="fa fa-chevron-left"></i> 3.16笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/16/3-16笔记/" rel="prev" title="3.16笔记">
-                3.16笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
