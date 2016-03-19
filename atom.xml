@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-18T14:02:51.824Z</updated>
+  <updated>2016-03-19T15:29:51.495Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>3.19笔记_页面初始化</title>
+    <link href="http://yoursite.com/2016/03/19/3-19%E7%AC%94%E8%AE%B0-%E9%A1%B5%E9%9D%A2%E5%88%9D%E5%A7%8B%E5%8C%96/"/>
+    <id>http://yoursite.com/2016/03/19/3-19笔记-页面初始化/</id>
+    <published>2016-03-19T15:28:46.000Z</published>
+    <updated>2016-03-19T15:29:51.495Z</updated>
+    
+    <content type="html">&lt;p&gt;body,ul,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select { padding:0; margin:0; font-family:arial; }&lt;br&gt;li { list-style:none; }&lt;br&gt;img { border:none; }&lt;br&gt;a { text-decoration:none; }&lt;br&gt;a:hover { text-decoration:underline; }&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      页面初始化
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>3.18笔记_兼容性问题</title>
