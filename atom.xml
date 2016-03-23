@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-21T18:01:45.743Z</updated>
+  <updated>2016-03-23T16:16:14.022Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,59 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用伪类清除浮动</title>
+    <link href="http://yoursite.com/2016/03/24/%E5%88%A9%E7%94%A8%E4%BC%AA%E7%B1%BB%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/"/>
+    <id>http://yoursite.com/2016/03/24/利用伪类清除浮动/</id>
+    <published>2016-03-23T16:14:04.000Z</published>
+    <updated>2016-03-23T16:16:14.022Z</updated>
+    
+    <content type="html">&lt;p&gt;给要清浮动的父元素加一个clear的类就可以了&lt;br&gt;.clear {zoom:1;}&lt;br&gt;.clear:after { content: ‘’; display: block;clear: both;}&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      clear
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>3.22栅栏响应式布局</title>
+    <link href="http://yoursite.com/2016/03/22/3-22%E6%A0%85%E6%A0%8F%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/"/>
+    <id>http://yoursite.com/2016/03/22/3-22栅栏响应式布局/</id>
+    <published>2016-03-22T15:50:28.000Z</published>
+    <updated>2016-03-22T15:56:28.108Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;可采用boostrap布局&quot;&gt;&lt;a href=&quot;#可采用boostrap布局&quot; class=&quot;headerlink&quot; title=&quot;可采用boostrap布局&quot;&gt;&lt;/a&gt;可采用boostrap布局&lt;/h2&gt;&lt;p&gt;&lt;div class=&quot;row&quot;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;col-md-4 col-sm-6&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;col-md-4 col-sm-6&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;col-md-4 col-sm-12&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;col-md-3 col-sm-3&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;col-md-3 col-sm-3&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;col-md-1 col-sm-2&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;col-md-1 col-sm-2&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;col-md-2 col-sm-8&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;col-md-2 col-sm-3&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div class=&quot;col-md-6 col-sm-3&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;body{&lt;br&gt;    margin: 0;&lt;br&gt;}&lt;br&gt;.row{&lt;br&gt;    margin: 10px;&lt;br&gt;}&lt;br&gt;[class*=”col-“]{&lt;br&gt;    float: left;&lt;br&gt;}&lt;/p&gt;
+&lt;p&gt;@media(min-width:768px){&lt;br&gt;    .col-md-1{&lt;br&gt;        width: 8.33333333%;&lt;br&gt;    }&lt;br&gt;    .col-md-2{&lt;br&gt;        width: 16.66666667%;&lt;br&gt;    }&lt;br&gt;    .col-md-3{&lt;br&gt;        width: 25%;&lt;br&gt;    }&lt;br&gt;    .col-md-4{&lt;br&gt;        width: 33.33333333%;&lt;br&gt;    }&lt;br&gt;    .col-md-5{&lt;br&gt;        width: 41.66666666%;&lt;br&gt;    }&lt;br&gt;    .col-md-6{&lt;br&gt;        width: 50%;&lt;br&gt;    }&lt;br&gt;    .col-md-7{&lt;br&gt;        width: 58.33333333%;&lt;br&gt;    }&lt;br&gt;    .col-md-8{&lt;br&gt;        width: 66.66666667%;&lt;br&gt;    }&lt;br&gt;    .col-md-9{&lt;br&gt;        width: 75%;&lt;br&gt;    }&lt;br&gt;    .col-md-10{&lt;br&gt;        width: 83.33333333%;&lt;br&gt;    }&lt;br&gt;    .col-md-11{&lt;br&gt;        width: 91.66666667%;&lt;br&gt;    }&lt;br&gt;    .col-md-12{&lt;br&gt;        width: 100%;&lt;br&gt;    }&lt;br&gt;}&lt;/p&gt;
+&lt;p&gt;@media(max-width: 766px){&lt;br&gt;    .col-sm-1{&lt;br&gt;        width: 8.33333333%;&lt;br&gt;    }&lt;br&gt;    .col-sm-2{&lt;br&gt;        width: 16.66666667%;&lt;br&gt;    }&lt;br&gt;    .col-sm-3{&lt;br&gt;        width: 25%;&lt;br&gt;    }&lt;br&gt;    .col-sm-4{&lt;br&gt;        width: 33.33333333%;&lt;br&gt;    }&lt;br&gt;    .col-sm-5{&lt;br&gt;        width: 41.66666666%;&lt;br&gt;    }&lt;br&gt;    .col-sm-6{&lt;br&gt;        width: 50%;&lt;br&gt;    }&lt;br&gt;    .col-sm-7{&lt;br&gt;        width: 58.33333333%;&lt;br&gt;    }&lt;br&gt;    .col-sm-8{&lt;br&gt;        width: 66.66666667%;&lt;br&gt;    }&lt;br&gt;    .col-sm-9{&lt;br&gt;        width: 75%;&lt;br&gt;    }&lt;br&gt;    .col-sm-10{&lt;br&gt;        width: 83.33333333%;&lt;br&gt;    }&lt;br&gt;    .col-sm-11{&lt;br&gt;        width: 91.66666667%;&lt;br&gt;    }&lt;br&gt;    .col-sm-12{&lt;br&gt;        width: 100%;&lt;br&gt;    }&lt;br&gt;}&lt;/p&gt;
+&lt;p&gt;div.content{&lt;br&gt;    margin:10px;&lt;br&gt;    background-color:#eee;&lt;br&gt;    border:1px solid #999;&lt;br&gt;    height:48px;&lt;br&gt;}&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      栅栏响应式布局
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>3.21笔记</title>

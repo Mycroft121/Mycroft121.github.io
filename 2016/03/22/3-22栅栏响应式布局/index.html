@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="兼容性问题">
+<meta name="description" content="栅栏响应式布局">
 <meta property="og:type" content="article">
-<meta property="og:title" content="3.18笔记_兼容性问题">
-<meta property="og:url" content="http://yoursite.com/2016/03/18/3-18笔记-兼容性问题/index.html">
+<meta property="og:title" content="3.22栅栏响应式布局">
+<meta property="og:url" content="http://yoursite.com/2016/03/22/3-22栅栏响应式布局/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="兼容性问题">
-<meta property="og:updated_time" content="2016-03-18T14:02:51.824Z">
+<meta property="og:description" content="栅栏响应式布局">
+<meta property="og:updated_time" content="2016-03-22T15:56:28.108Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="3.18笔记_兼容性问题">
-<meta name="twitter:description" content="兼容性问题">
+<meta name="twitter:title" content="3.22栅栏响应式布局">
+<meta name="twitter:description" content="栅栏响应式布局">
 
 
 
@@ -86,7 +86,7 @@
   };
 </script>
 
-  <title> 3.18笔记_兼容性问题 | Hexo </title>
+  <title> 3.22栅栏响应式布局 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +206,7 @@
             
             
               
-                3.18笔记_兼容性问题
+                3.22栅栏响应式布局
               
             
           </h1>
@@ -218,8 +218,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-18T22:01:58+08:00" content="2016-03-18">
-              2016-03-18
+            <time itemprop="dateCreated" datetime="2016-03-22T23:50:28+08:00" content="2016-03-22">
+              2016-03-22
             </time>
           </span>
 
@@ -245,48 +245,22 @@
       
 
       
-        <p>H5标签兼容<br>    document.createElement(“header”);<br>    document.createElement(“section”);<br>    document.createElement(“footer”);<br>创建相应标签，并加上block<br>或引用js，html5shiv.js</p>
-<p>元素浮动之后,能设置宽度的话就给元素加宽度.如果需要宽度是内容撑开,就给它里边的块元素加上浮动;</p>
-<p>第一块元素浮动,第二块元素加margin值等于第一块元素,在IE6下会有间隙问题;</p>
-<p>解决方案：<br>    1、不建议这么写<br>    2、用浮动解决</p>
-<p>IE6下子元素超出父级宽高，会把父级的宽高撑开</p>
-<p>解决方案：<br>    不要让子元素的宽高超过父级</p>
-<p>p 包含块元素嵌套规则。</p>
-<p>会产生两个p块，还有td，h1等标签<br>解决方案：<br>    不建议使用</p>
-<p>margin兼容性问题</p>
-<p>1、margin-top传递<br>    触发EFC、haslayout<br>2、上下margin叠加<br>    尽量使用同一方向的margin，比如都设置top或bottom</p>
-<p>display:inline-block（ie6不支持）<br>解决方案：<br>    <em>display: inline;
-    </em>zoom: 1;</p>
-<p>IE6 最小高度问题<br>IE6下最小高度19px<br>解决方案：<br>    overflow:hidden</p>
-<p>IE6 双边距<br>当元素浮动后再设置margin那么就会产生双倍间距<br>解决方案：<br>    针对ie6、7添加display:inline</p>
-<p>li里元素都浮动 li 在IE6 7  下方会产生4px间隙问题</p>
-<p>解决方案：<br>    针对ie6、7添加vertical-align:top;</p>
-<p>浮动元素之间注释，导致多复制一个文字问题</p>
-<p>两个浮动元素中间有注释或者内联元素并且和父级宽度相差不超过3px<br>解决方案：<br>    1、两个浮动元素中间避免出现内联元素或者注释<br>    2、与父级宽度相差3px或以上    </p>
-<p>IE6 7 父级元素的overflow:hidden 是包不住子级的relative</p>
-<p>解决方案:<br>    针对ie6、7给父级元素添加相对定位</p>
-<p>IE6下绝对定位元素父级宽高是奇数,绝对定位元素的right和bottom值会有1px的偏差</p>
-<p>解决方案:<br>    避免父级宽度出现奇数</p>
-<p>IE6下绝对定位元素和浮动元素并列绝对定位元素消失</p>
-<p>解决方案:<br>    浮动元素和绝对定位元素是同级的话定位元素就会消失，所以咱们只要让他们两不处于同级就可以避免BUG</p>
-<p>IE6 下input的空隙</p>
-<p>解决方案:<br>    给input元素添加float</p>
-<p>IE6 下 输入类型表单控件背景问题</p>
-<p>解决方案:<br>    设置background-attachment:fixed;</p>
-<p>hack 黑客？ （原意：修改）</p>
-<p>针对不同的浏览器写不同的CSS 样式的过程，就叫CSS hack!</p>
-<p>\9 所有的IE10及之前</p>
-<ul>
-<li>IE7及ie7以下的ie浏览器认识    </li>
-</ul>
-<p>_IE6及ie6的ie浏览器认识</p>
-<p>IE6不支持png24 图片。<br>解决方案：</p>
-<p>JS插件(问题:不能处理body之上png24)</p>
-<pre><code>DD_belatedPNG.fix(&apos;xxx&apos;);
-</code></pre><p>原生滤镜</p>
-<pre><code>_background:none;_filter : progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&quot;XX.png&quot;, sizingMethod=&quot;crop&quot;);
-</code></pre><p>样式优先级、提升样式优先级<br>默认 &lt; 类型 &lt; class &lt; id &lt; style(行间) &lt; !important </p>
-<p>!important  提升样式优先级权重</p>
+        <h2 id="可采用boostrap布局"><a href="#可采用boostrap布局" class="headerlink" title="可采用boostrap布局"></a>可采用boostrap布局</h2><p><div class="row"></div></p>
+<p><div class="col-md-4 col-sm-6"><div class="content"></div></div></p>
+<p><div class="col-md-4 col-sm-6"><div class="content"></div></div></p>
+<p><div class="col-md-4 col-sm-12"><div class="content"></div></div></p>
+<p><div class="col-md-3 col-sm-3"><div class="content"></div></div></p>
+<p><div class="col-md-6 col-sm-6"><div class="content"></div></div></p>
+<p><div class="col-md-3 col-sm-3"><div class="content"></div></div></p>
+<p><div class="col-md-1 col-sm-2"><div class="content"></div></div></p>
+<p><div class="col-md-1 col-sm-2"><div class="content"></div></div></p>
+<p><div class="col-md-2 col-sm-8"><div class="content"></div></div></p>
+<p><div class="col-md-2 col-sm-3"><div class="content"></div></div></p>
+<p><div class="col-md-6 col-sm-3"><div class="content"></div></div></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>body{<br>    margin: 0;<br>}<br>.row{<br>    margin: 10px;<br>}<br>[class*=”col-“]{<br>    float: left;<br>}</p>
+<p>@media(min-width:768px){<br>    .col-md-1{<br>        width: 8.33333333%;<br>    }<br>    .col-md-2{<br>        width: 16.66666667%;<br>    }<br>    .col-md-3{<br>        width: 25%;<br>    }<br>    .col-md-4{<br>        width: 33.33333333%;<br>    }<br>    .col-md-5{<br>        width: 41.66666666%;<br>    }<br>    .col-md-6{<br>        width: 50%;<br>    }<br>    .col-md-7{<br>        width: 58.33333333%;<br>    }<br>    .col-md-8{<br>        width: 66.66666667%;<br>    }<br>    .col-md-9{<br>        width: 75%;<br>    }<br>    .col-md-10{<br>        width: 83.33333333%;<br>    }<br>    .col-md-11{<br>        width: 91.66666667%;<br>    }<br>    .col-md-12{<br>        width: 100%;<br>    }<br>}</p>
+<p>@media(max-width: 766px){<br>    .col-sm-1{<br>        width: 8.33333333%;<br>    }<br>    .col-sm-2{<br>        width: 16.66666667%;<br>    }<br>    .col-sm-3{<br>        width: 25%;<br>    }<br>    .col-sm-4{<br>        width: 33.33333333%;<br>    }<br>    .col-sm-5{<br>        width: 41.66666666%;<br>    }<br>    .col-sm-6{<br>        width: 50%;<br>    }<br>    .col-sm-7{<br>        width: 58.33333333%;<br>    }<br>    .col-sm-8{<br>        width: 66.66666667%;<br>    }<br>    .col-sm-9{<br>        width: 75%;<br>    }<br>    .col-sm-10{<br>        width: 83.33333333%;<br>    }<br>    .col-sm-11{<br>        width: 91.66666667%;<br>    }<br>    .col-sm-12{<br>        width: 100%;<br>    }<br>}</p>
+<p>div.content{<br>    margin:10px;<br>    background-color:#eee;<br>    border:1px solid #999;<br>    height:48px;<br>}</p>
 
       
     </div>
@@ -304,16 +278,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/17/3-17笔记/" rel="next" title="3.17笔记">
-                <i class="fa fa-chevron-left"></i> 3.17笔记
+              <a href="/2016/03/22/3-21笔记/" rel="next" title="3.21笔记">
+                <i class="fa fa-chevron-left"></i> 3.21笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/03/19/3-19笔记-页面初始化/" rel="prev" title="3.19笔记_页面初始化">
-                3.19笔记_页面初始化 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/03/24/利用伪类清除浮动/" rel="prev" title="利用伪类清除浮动">
+                利用伪类清除浮动 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -432,7 +406,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#可采用boostrap布局"><span class="nav-number">1.</span> <span class="nav-text">可采用boostrap布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">2.</span> <span class="nav-text"></span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
