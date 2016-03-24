@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-23T16:16:14.022Z</updated>
+  <updated>2016-03-24T15:34:03.312Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>3.24call方法</title>
+    <link href="http://yoursite.com/2016/03/24/3-24call%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2016/03/24/3-24call方法/</id>
+    <published>2016-03-24T15:33:10.000Z</published>
+    <updated>2016-03-24T15:34:03.312Z</updated>
+    
+    <content type="html">&lt;p&gt;call 方法&lt;br&gt;call 方法可以用来代替另一个对象调用一个方法。call 方法可将一个函数的对象上下文从初始的上下文改变为由 thisObj 指定的新对象。&lt;br&gt;如果没有提供 thisObj 参数，那么 Global 对象被用作 thisObj。&lt;br&gt;function add(a,b)&lt;br&gt;{&lt;br&gt;alert(a+b);&lt;br&gt;}&lt;br&gt;function sub(a,b)&lt;br&gt;{&lt;br&gt;alert(a-b);&lt;br&gt;}&lt;br&gt;add.call(sub,3,1);&lt;br&gt;这个例子中的意思就是用 add 来替换 sub，add.call(sub,3,1) == add(3,1) ，所以运行结果为：alert(4); // 注意：js 中的函数其实是对象，函数名是对 Function 对象的引用。 &lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      call方法
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>利用伪类清除浮动</title>
