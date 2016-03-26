@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="反思">
+<meta name="description" content="flexbox">
 <meta property="og:type" content="article">
-<meta property="og:title" content="3.20笔记">
-<meta property="og:url" content="http://yoursite.com/2016/03/21/3-20笔记/index.html">
+<meta property="og:title" content="3.26flexbox">
+<meta property="og:url" content="http://yoursite.com/2016/03/26/3-26flexbox/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="反思">
-<meta property="og:updated_time" content="2016-03-20T17:37:41.069Z">
+<meta property="og:description" content="flexbox">
+<meta property="og:updated_time" content="2016-03-26T13:29:52.092Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="3.20笔记">
-<meta name="twitter:description" content="反思">
+<meta name="twitter:title" content="3.26flexbox">
+<meta name="twitter:description" content="flexbox">
 
 
 
@@ -86,7 +86,7 @@
   };
 </script>
 
-  <title> 3.20笔记 | Hexo </title>
+  <title> 3.26flexbox | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +206,7 @@
             
             
               
-                3.20笔记
+                3.26flexbox
               
             
           </h1>
@@ -218,8 +218,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-21T01:28:24+08:00" content="2016-03-21">
-              2016-03-21
+            <time itemprop="dateCreated" datetime="2016-03-26T21:28:45+08:00" content="2016-03-26">
+              2016-03-26
             </time>
           </span>
 
@@ -245,7 +245,11 @@
       
 
       
-        <p>p标签设置字体后所在位置会发生变化，边框虽然相对应，但是用定位比较不好弄。这是个问题，还有就是文字间距，不知道怎么设置。</p>
+        <p>（一） flexbox是什么<br>flex，本意“弹性”。flexbox其实是块元素的一组属性， 就好像display是一组属性， position是一组属性，float也是一组属性。这些概念应该是并列的。<br>flexbox为元素布局提供了更多便利。初来乍到还体会不到它的博大精深，还不了解为什么要把这组属性重点指出来认识一下。<br>这组属性主要包含：<br>(1) 父元属性 flex-direction ，flex-wrap，flex-flow，justify-content，align-items，align-content。或者叫容器属性，这些属性从容器角度决定了内部子元素的布局方式。<br>(2) 子元属性 order,flex-grow,flex-shrink,flex-basis,flex,align-self。这些属性分属于各个子元素（item）,可以实现子元素排序、伸缩等一些布局的变化。</p>
+<p>（二）@media是什么<br>@media 可以针对不同的输出媒体类型（通常是显示器屏幕）设置不同的样式，可以用于实现响应式的页面。例如浏览器大小被重置时，页面也会根据浏览器的宽度和高度重新渲染。<br>常见的媒体类型包括print,screen,speech。<br>常见的媒体功能包括长宽尺寸、长宽比例、分辨率等。task10中用到了minwidth。</p>
+<p>（三）其他<br>拜读其他team的代码，看到同一属性都要写作多行代码。例如：<br>display: -webkit-flex;<br>display: -ms-flexbox;<br>display: flex;</p>
+<p>这应该是考虑到不同浏览器的兼容，不同的前缀符对应于不同的浏览器内核。</p>
+<p>当前浏览器内核引擎基本上是四分天下： Trident: IE 等; Gecko: Firefox 等; WebKit: Safari, Google Chrome,傲游3,猎豹浏览器,百度浏览器等；Presto: Opera的内核，但由于市场选择问题，主要应用在手机平台–Opera mini。</p>
 
       
     </div>
@@ -263,17 +267,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/19/3-19笔记-页面初始化/" rel="next" title="3.19笔记_页面初始化">
-                <i class="fa fa-chevron-left"></i> 3.19笔记_页面初始化
+              <a href="/2016/03/25/3-25遮罩层的设置/" rel="next" title="3.25遮罩层的设置">
+                <i class="fa fa-chevron-left"></i> 3.25遮罩层的设置
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/22/3-21笔记/" rel="prev" title="3.21笔记">
-                3.21笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

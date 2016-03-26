@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-26T12:09:21.601Z</updated>
+  <updated>2016-03-26T13:29:52.092Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>3.26flexbox</title>
+    <link href="http://yoursite.com/2016/03/26/3-26flexbox/"/>
+    <id>http://yoursite.com/2016/03/26/3-26flexbox/</id>
+    <published>2016-03-26T13:28:45.000Z</published>
+    <updated>2016-03-26T13:29:52.092Z</updated>
+    
+    <content type="html">&lt;p&gt;（一） flexbox是什么&lt;br&gt;flex，本意“弹性”。flexbox其实是块元素的一组属性， 就好像display是一组属性， position是一组属性，float也是一组属性。这些概念应该是并列的。&lt;br&gt;flexbox为元素布局提供了更多便利。初来乍到还体会不到它的博大精深，还不了解为什么要把这组属性重点指出来认识一下。&lt;br&gt;这组属性主要包含：&lt;br&gt;(1) 父元属性 flex-direction ，flex-wrap，flex-flow，justify-content，align-items，align-content。或者叫容器属性，这些属性从容器角度决定了内部子元素的布局方式。&lt;br&gt;(2) 子元属性 order,flex-grow,flex-shrink,flex-basis,flex,align-self。这些属性分属于各个子元素（item）,可以实现子元素排序、伸缩等一些布局的变化。&lt;/p&gt;
+&lt;p&gt;（二）@media是什么&lt;br&gt;@media 可以针对不同的输出媒体类型（通常是显示器屏幕）设置不同的样式，可以用于实现响应式的页面。例如浏览器大小被重置时，页面也会根据浏览器的宽度和高度重新渲染。&lt;br&gt;常见的媒体类型包括print,screen,speech。&lt;br&gt;常见的媒体功能包括长宽尺寸、长宽比例、分辨率等。task10中用到了minwidth。&lt;/p&gt;
+&lt;p&gt;（三）其他&lt;br&gt;拜读其他team的代码，看到同一属性都要写作多行代码。例如：&lt;br&gt;display: -webkit-flex;&lt;br&gt;display: -ms-flexbox;&lt;br&gt;display: flex;&lt;/p&gt;
+&lt;p&gt;这应该是考虑到不同浏览器的兼容，不同的前缀符对应于不同的浏览器内核。&lt;/p&gt;
+&lt;p&gt;当前浏览器内核引擎基本上是四分天下： Trident: IE 等; Gecko: Firefox 等; WebKit: Safari, Google Chrome,傲游3,猎豹浏览器,百度浏览器等；Presto: Opera的内核，但由于市场选择问题，主要应用在手机平台–Opera mini。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      flexbox
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>3.25遮罩层的设置</title>
