@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-01T15:51:54.866Z</updated>
+  <updated>2016-04-01T16:00:51.872Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>4.1笔记</title>
+    <link href="http://yoursite.com/2016/04/01/4-1%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/04/01/4-1笔记/</id>
+    <published>2016-04-01T15:55:00.000Z</published>
+    <updated>2016-04-01T16:00:51.872Z</updated>
+    
+    <content type="html">&lt;p&gt;运算符有$$,||,!;还有加减乘除和取模&lt;br&gt;反选按钮的操作aInp[0].onclick = function(){for(var i = 1; i&amp;lt; aLi.length;i++){aInp.checked = !aInp[i].checked}}&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      运算符，运算流程
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>3.31笔记</title>
@@ -446,24 +465,6 @@
     <summary type="html">
     
       the second
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hexo小试牛刀</title>
-    <link href="http://yoursite.com/2016/03/13/new-article/"/>
-    <id>http://yoursite.com/2016/03/13/new-article/</id>
-    <published>2016-03-13T02:16:38.000Z</published>
-    <updated>2016-03-13T02:19:33.401Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-      testone
     
     </summary>
     
