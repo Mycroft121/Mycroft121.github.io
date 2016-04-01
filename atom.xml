@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-30T13:36:15.003Z</updated>
+  <updated>2016-04-01T15:51:54.866Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>3.31笔记</title>
+    <link href="http://yoursite.com/2016/04/01/3-31%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/04/01/3-31笔记/</id>
+    <published>2016-04-01T15:48:58.000Z</published>
+    <updated>2016-04-01T15:51:54.866Z</updated>
+    
+    <content type="html">&lt;p&gt;函数传参问题，可以先把函数写出来，然后合并相同的函数，可变的部分就是参数。&lt;br&gt;作用域问题，for循环里的函数，不能再用到i；函数里i的值会始终是那个最大值。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      函数传参，作用域
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>3.30笔记</title>
@@ -445,22 +464,6 @@
     <summary type="html">
     
       testone
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hello</title>
-    <link href="http://yoursite.com/2016/03/12/hello/"/>
-    <id>http://yoursite.com/2016/03/12/hello/</id>
-    <published>2016-03-12T15:16:39.000Z</published>
-    <updated>2016-03-12T15:16:39.041Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
     
     </summary>
     
