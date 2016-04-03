@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="反思">
+<meta name="description" content="函数封装">
 <meta property="og:type" content="article">
-<meta property="og:title" content="3.20笔记">
-<meta property="og:url" content="http://yoursite.com/2016/03/21/3-20笔记/index.html">
+<meta property="og:title" content="4.3笔记">
+<meta property="og:url" content="http://yoursite.com/2016/04/03/4-3笔记/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="反思">
-<meta property="og:updated_time" content="2016-03-20T17:37:41.069Z">
+<meta property="og:description" content="函数封装">
+<meta property="og:updated_time" content="2016-04-03T13:38:46.797Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="3.20笔记">
-<meta name="twitter:description" content="反思">
+<meta name="twitter:title" content="4.3笔记">
+<meta name="twitter:description" content="函数封装">
 
 
 
@@ -86,7 +86,7 @@
   };
 </script>
 
-  <title> 3.20笔记 | Hexo </title>
+  <title> 4.3笔记 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +206,7 @@
             
             
               
-                3.20笔记
+                4.3笔记
               
             
           </h1>
@@ -218,8 +218,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-21T01:28:24+08:00" content="2016-03-21">
-              2016-03-21
+            <time itemprop="dateCreated" datetime="2016-04-03T21:30:40+08:00" content="2016-04-03">
+              2016-04-03
             </time>
           </span>
 
@@ -245,7 +245,7 @@
       
 
       
-        <p>p标签设置字体后所在位置会发生变化，边框虽然相对应，但是用定位比较不好弄。这是个问题，还有就是文字间距，不知道怎么设置。</p>
+        <p>先写出主要功能，然后放进函数里，吧可变的提取出来，用参数替代。<br>遇到正负的参数，可以采用if语句判断<br>if（endFn）{<br>  endFn（）;<br>};<br>等价于endFn&amp;&amp;endFn();如果前面为真，就执行后面一个函数；<br>上述代码是用来用函数回调的。<br>function getStyle ( obj, attr ) { return obj.currentStyle?obj.currentStyle[attr] : getComputedStyle( obj )[attr]; }<br>上面函数用来获取style里的数值</p>
 
       
     </div>
@@ -263,17 +263,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/19/3-19笔记-页面初始化/" rel="next" title="3.19笔记_页面初始化">
-                <i class="fa fa-chevron-left"></i> 3.19笔记_页面初始化
+              <a href="/2016/04/02/4-2笔记/" rel="next" title="4.2笔记">
+                <i class="fa fa-chevron-left"></i> 4.2笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/22/3-21笔记/" rel="prev" title="3.21笔记">
-                3.21笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
