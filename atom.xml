@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-05T15:12:57.281Z</updated>
+  <updated>2016-04-05T15:18:04.395Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>4.5笔记</title>
+    <link href="http://yoursite.com/2016/04/05/4-5%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/04/05/4-5笔记/</id>
+    <published>2016-04-05T15:16:14.000Z</published>
+    <updated>2016-04-05T15:18:04.395Z</updated>
+    
+    <content type="html">&lt;p&gt;作为调整，早休息。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      空白
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>4.4笔记</title>
@@ -435,30 +454,6 @@
     <summary type="html">
     
       定位补充、表格表单
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>3.16笔记</title>
-    <link href="http://yoursite.com/2016/03/16/3-16%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/03/16/3-16笔记/</id>
-    <published>2016-03-16T15:47:59.000Z</published>
-    <updated>2016-03-16T15:48:35.967Z</updated>
-    
-    <content type="html">&lt;p&gt;块元素的特征&lt;br&gt;    1、在没有设置宽度的时候，默认撑满一行。&lt;br&gt;    2、默认块元素独占一行&lt;br&gt;    3、支持所有css命令&lt;/p&gt;
-&lt;p&gt;内联元素的特征&lt;br&gt;    1、宽度由内容撑开&lt;br&gt;    2、不支持宽高&lt;br&gt;    3、一行上可以显示继续跟同类的标签&lt;br&gt;    4、不支持上下的margin&lt;br&gt;    5、代码换行被解析&lt;/p&gt;
-&lt;p&gt;inline-block&lt;br&gt;    1、块元素能在一行显示&lt;br&gt;    2、内联元素支持宽高&lt;br&gt;    3、没有宽度是，由内容撑开宽度&lt;/p&gt;
-&lt;p&gt;清除浮动的方法&lt;br&gt;    1、家高度(扩展性不好)&lt;br&gt;    2、父级加浮动(页面中所有元素都加浮动，margin左右自动失效（float bad))&lt;br&gt;    3、.inline-block清除浮动方法(margin左右auto失效)&lt;br&gt;    4、空标签清除浮动(IE6最小高度19px:(解决后IE6下还有2px偏差))&lt;br&gt;    5、.br清浮动(不符合工作中:结构、样式、行为，三者分离的要求)&lt;/p&gt;
-&lt;p&gt;相对定位的特征&lt;br&gt;    a、不影响元素本身的特征;&lt;br&gt;    b、不使元素脱离文档流(元素移动之后原始位置会被保留);&lt;br&gt;    c、如果没有定位偏移量,对元素本身没有任何影响;&lt;br&gt;    d、提升层级&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;块元素的特征&lt;br&gt;    1、在没有设置宽度的时候，默认撑满一行。&lt;br&gt;    2、默认块元素独占一行&lt;br&gt;    3、支持所有css命令&lt;/p&gt;
-&lt;p&gt;内联元素的特征&lt;br&gt;    1、宽度由内容撑开&lt;br&gt;    2、不支持宽高&lt;br&gt;    3、一行上可以显示继
     
     </summary>
     
