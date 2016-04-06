@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-05T15:18:04.395Z</updated>
+  <updated>2016-04-06T14:52:59.034Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>4.6笔记</title>
+    <link href="http://yoursite.com/2016/04/06/4-6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/04/06/4-6笔记/</id>
+    <published>2016-04-06T12:44:41.000Z</published>
+    <updated>2016-04-06T14:52:59.034Z</updated>
+    
+    <content type="html">&lt;p&gt;var str = “妙味课堂”;&lt;br&gt;str.charCodeAt()所选字符串的字母编码&lt;br&gt;String.fromCharCode(22937)根据编码转换成字符串&lt;br&gt;str.indexOf(‘m’，i)查找数组中m所在位置，i表示从第i位开始查找。返回值为-1，表示没找到&lt;br&gt;str.lastindexOf()表示从右往左找//如果第二个值为负值，默认当成0来处理&lt;br&gt;str.substring(0,2)//截取前两个字符串&lt;br&gt;str.substring(2,0)//截取两个字符串，大的往后扔，小的往前扔；或者如果为负数的话，表示为0&lt;br&gt;str.slice(2,0)//不交换位置，只会从左往左右找，这样什么都找不到&lt;br&gt;str.slice(-2)//跳到尾部第二位开始从左往右找&lt;br&gt;str.slice(-4,-2)&lt;br&gt;str.toUpperCase()//全部转换为大写&lt;br&gt;str.toLowerCase()//全部转换为小写&lt;br&gt;str.split(‘.’);//根据点划分，成为一个数组&lt;br&gt;var str = leo;&lt;br&gt;str.split(‘’);//直接划分成[‘l’,’e’,’o’]&lt;br&gt;split还有个可选参数，表示分割的长度&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      4.6笔记
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>4.5笔记</title>
@@ -430,30 +449,6 @@
     <summary type="html">
     
       兼容性问题
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>3.17笔记</title>
-    <link href="http://yoursite.com/2016/03/17/3-17%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/03/17/3-17笔记/</id>
-    <published>2016-03-17T14:01:07.000Z</published>
-    <updated>2016-03-17T14:11:36.251Z</updated>
-    
-    <content type="html">&lt;p&gt;绝对定位的特征&lt;br&gt;    a、使元素完全脱离文档流；&lt;br&gt;    b、使内嵌支持宽高；&lt;br&gt;    c、块属性标签内容撑开宽度；&lt;br&gt;    d、如果有定位父级相对于定位父级发生偏移，没有定位父级相对于document发生偏移；&lt;br&gt;    e、相对定位一般都是配合绝对定位元素使用的；&lt;br&gt;    f、提升层级&lt;/p&gt;
-&lt;p&gt;表格样式重置&lt;br&gt;table{border-collapse:collapse;} 单元格间隙合并&lt;br&gt;th,td{padding:0;}重置单元格默认填充&lt;/p&gt;
-&lt;p&gt;label  标签为 input 元素定义标注&lt;br&gt;    &lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;a&quot;&gt;&lt;br&gt;    &lt;label for=&quot;a&quot;&gt;……&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;checked  在页面加载时默认选定的 input 元素。&lt;br&gt;    &lt;input type=&quot;checkbox&quot; name=&quot;&quot; checked&gt;&lt;/p&gt;
-&lt;p&gt;disabled  属性规定应该禁用 input 元素。&lt;br&gt;    &lt;input type=&quot;checkbox&quot; name=&quot;&quot; disabled&gt;&lt;/p&gt;
-&lt;p&gt;记录，对于div布局，如果是一个div在左，一个在右，之间是一块内容，用浮动的话，div先写，然后内容块最后做补充，具体看任务三。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      定位补充、表格表单
     
     </summary>
     
