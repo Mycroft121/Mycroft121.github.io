@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-06T14:52:59.034Z</updated>
+  <updated>2016-04-07T15:25:43.194Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>4.7笔记</title>
+    <link href="http://yoursite.com/2016/04/07/4-7%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/04/07/4-7笔记/</id>
+    <published>2016-04-07T15:23:46.000Z</published>
+    <updated>2016-04-07T15:25:43.194Z</updated>
+    
+    <content type="html">&lt;p&gt;DOM:Document Object Model文档对象模型&lt;br&gt;            文档:html页面&lt;br&gt;            文档对象:页面中元素&lt;br&gt;            文档对象模型:定义 为了能够让程序(js)去操作页面中的元素&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;DOM会把文档看作一颗树,同时定义了很多方法来操作这棵树中的每一个元素(节点)
+DOM节点
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;元素.childNodes:只读 属性 子节点列表集合&lt;br&gt;                    标准下：包含了文本和元素类型的节点,但也会包含非法嵌套的子节点&lt;br&gt;                    非标准下：只包含元素类型的节点，ie7以下不会包含非法嵌套子节点&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    childNodes只包含一级子节点，不包含后辈孙级以下的节点
+
+DOM节点的类型有很多种 12种
+
+元素.nodeType:只读 属性 当前元素的节点类型
+
+元素节点:  1
+文本节点:  3
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;元素.children :只读 属性 子节点列表集合&lt;br&gt;                    标准下：只包含元素类型的节点&lt;br&gt;                    非标准下：只包含元素类型的节点&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      4.7笔记
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>4.6笔记</title>
@@ -389,66 +420,6 @@
     <summary type="html">
     
       页面初始化
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>3.18笔记_兼容性问题</title>
-    <link href="http://yoursite.com/2016/03/18/3-18%E7%AC%94%E8%AE%B0-%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/"/>
-    <id>http://yoursite.com/2016/03/18/3-18笔记-兼容性问题/</id>
-    <published>2016-03-18T14:01:58.000Z</published>
-    <updated>2016-03-18T14:02:51.824Z</updated>
-    
-    <content type="html">&lt;p&gt;H5标签兼容&lt;br&gt;    document.createElement(“header”);&lt;br&gt;    document.createElement(“section”);&lt;br&gt;    document.createElement(“footer”);&lt;br&gt;创建相应标签，并加上block&lt;br&gt;或引用js，html5shiv.js&lt;/p&gt;
-&lt;p&gt;元素浮动之后,能设置宽度的话就给元素加宽度.如果需要宽度是内容撑开,就给它里边的块元素加上浮动;&lt;/p&gt;
-&lt;p&gt;第一块元素浮动,第二块元素加margin值等于第一块元素,在IE6下会有间隙问题;&lt;/p&gt;
-&lt;p&gt;解决方案：&lt;br&gt;    1、不建议这么写&lt;br&gt;    2、用浮动解决&lt;/p&gt;
-&lt;p&gt;IE6下子元素超出父级宽高，会把父级的宽高撑开&lt;/p&gt;
-&lt;p&gt;解决方案：&lt;br&gt;    不要让子元素的宽高超过父级&lt;/p&gt;
-&lt;p&gt;p 包含块元素嵌套规则。&lt;/p&gt;
-&lt;p&gt;会产生两个p块，还有td，h1等标签&lt;br&gt;解决方案：&lt;br&gt;    不建议使用&lt;/p&gt;
-&lt;p&gt;margin兼容性问题&lt;/p&gt;
-&lt;p&gt;1、margin-top传递&lt;br&gt;    触发EFC、haslayout&lt;br&gt;2、上下margin叠加&lt;br&gt;    尽量使用同一方向的margin，比如都设置top或bottom&lt;/p&gt;
-&lt;p&gt;display:inline-block（ie6不支持）&lt;br&gt;解决方案：&lt;br&gt;    &lt;em&gt;display: inline;
-    &lt;/em&gt;zoom: 1;&lt;/p&gt;
-&lt;p&gt;IE6 最小高度问题&lt;br&gt;IE6下最小高度19px&lt;br&gt;解决方案：&lt;br&gt;    overflow:hidden&lt;/p&gt;
-&lt;p&gt;IE6 双边距&lt;br&gt;当元素浮动后再设置margin那么就会产生双倍间距&lt;br&gt;解决方案：&lt;br&gt;    针对ie6、7添加display:inline&lt;/p&gt;
-&lt;p&gt;li里元素都浮动 li 在IE6 7  下方会产生4px间隙问题&lt;/p&gt;
-&lt;p&gt;解决方案：&lt;br&gt;    针对ie6、7添加vertical-align:top;&lt;/p&gt;
-&lt;p&gt;浮动元素之间注释，导致多复制一个文字问题&lt;/p&gt;
-&lt;p&gt;两个浮动元素中间有注释或者内联元素并且和父级宽度相差不超过3px&lt;br&gt;解决方案：&lt;br&gt;    1、两个浮动元素中间避免出现内联元素或者注释&lt;br&gt;    2、与父级宽度相差3px或以上    &lt;/p&gt;
-&lt;p&gt;IE6 7 父级元素的overflow:hidden 是包不住子级的relative&lt;/p&gt;
-&lt;p&gt;解决方案:&lt;br&gt;    针对ie6、7给父级元素添加相对定位&lt;/p&gt;
-&lt;p&gt;IE6下绝对定位元素父级宽高是奇数,绝对定位元素的right和bottom值会有1px的偏差&lt;/p&gt;
-&lt;p&gt;解决方案:&lt;br&gt;    避免父级宽度出现奇数&lt;/p&gt;
-&lt;p&gt;IE6下绝对定位元素和浮动元素并列绝对定位元素消失&lt;/p&gt;
-&lt;p&gt;解决方案:&lt;br&gt;    浮动元素和绝对定位元素是同级的话定位元素就会消失，所以咱们只要让他们两不处于同级就可以避免BUG&lt;/p&gt;
-&lt;p&gt;IE6 下input的空隙&lt;/p&gt;
-&lt;p&gt;解决方案:&lt;br&gt;    给input元素添加float&lt;/p&gt;
-&lt;p&gt;IE6 下 输入类型表单控件背景问题&lt;/p&gt;
-&lt;p&gt;解决方案:&lt;br&gt;    设置background-attachment:fixed;&lt;/p&gt;
-&lt;p&gt;hack 黑客？ （原意：修改）&lt;/p&gt;
-&lt;p&gt;针对不同的浏览器写不同的CSS 样式的过程，就叫CSS hack!&lt;/p&gt;
-&lt;p&gt;\9 所有的IE10及之前&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;IE7及ie7以下的ie浏览器认识    &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;_IE6及ie6的ie浏览器认识&lt;/p&gt;
-&lt;p&gt;IE6不支持png24 图片。&lt;br&gt;解决方案：&lt;/p&gt;
-&lt;p&gt;JS插件(问题:不能处理body之上png24)&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;DD_belatedPNG.fix(&amp;apos;xxx&amp;apos;);
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;原生滤镜&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;_background:none;_filter : progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&amp;quot;XX.png&amp;quot;, sizingMethod=&amp;quot;crop&amp;quot;);
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;样式优先级、提升样式优先级&lt;br&gt;默认 &amp;lt; 类型 &amp;lt; class &amp;lt; id &amp;lt; style(行间) &amp;lt; !important &lt;/p&gt;
-&lt;p&gt;!important  提升样式优先级权重&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      兼容性问题
     
     </summary>
     

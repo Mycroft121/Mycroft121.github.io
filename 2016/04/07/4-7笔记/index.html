@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="js做判断">
+<meta name="description" content="4.7笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="3.29笔记">
-<meta property="og:url" content="http://yoursite.com/2016/03/30/3-29笔记/index.html">
+<meta property="og:title" content="4.7笔记">
+<meta property="og:url" content="http://yoursite.com/2016/04/07/4-7笔记/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="js做判断">
-<meta property="og:updated_time" content="2016-03-30T11:20:53.825Z">
+<meta property="og:description" content="4.7笔记">
+<meta property="og:updated_time" content="2016-04-07T15:25:43.194Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="3.29笔记">
-<meta name="twitter:description" content="js做判断">
+<meta name="twitter:title" content="4.7笔记">
+<meta name="twitter:description" content="4.7笔记">
 
 
 
@@ -86,7 +86,7 @@
   };
 </script>
 
-  <title> 3.29笔记 | Hexo </title>
+  <title> 4.7笔记 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +206,7 @@
             
             
               
-                3.29笔记
+                4.7笔记
               
             
           </h1>
@@ -218,8 +218,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-30T19:16:24+08:00" content="2016-03-30">
-              2016-03-30
+            <time itemprop="dateCreated" datetime="2016-04-07T23:23:46+08:00" content="2016-04-07">
+              2016-04-07
             </time>
           </span>
 
@@ -245,7 +245,19 @@
       
 
       
-        <p>js中，图片背景的地址不能做判断<br>颜色值不能做判断<br>相对路径不能zuo’pa判断<br>解决方法：添加一个开关，但是一个开关只能处理一个按钮，但是可以写一个自定义属性aLi[i].Onoff = ‘true’;</p>
+        <p>DOM:Document Object Model文档对象模型<br>            文档:html页面<br>            文档对象:页面中元素<br>            文档对象模型:定义 为了能够让程序(js)去操作页面中的元素</p>
+<pre><code>DOM会把文档看作一颗树,同时定义了很多方法来操作这棵树中的每一个元素(节点)
+DOM节点
+</code></pre><p>元素.childNodes:只读 属性 子节点列表集合<br>                    标准下：包含了文本和元素类型的节点,但也会包含非法嵌套的子节点<br>                    非标准下：只包含元素类型的节点，ie7以下不会包含非法嵌套子节点</p>
+<pre><code>    childNodes只包含一级子节点，不包含后辈孙级以下的节点
+
+DOM节点的类型有很多种 12种
+
+元素.nodeType:只读 属性 当前元素的节点类型
+
+元素节点:  1
+文本节点:  3
+</code></pre><p>元素.children :只读 属性 子节点列表集合<br>                    标准下：只包含元素类型的节点<br>                    非标准下：只包含元素类型的节点</p>
 
       
     </div>
@@ -263,17 +275,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/28/3-28笔记/" rel="next" title="3.28笔记">
-                <i class="fa fa-chevron-left"></i> 3.28笔记
+              <a href="/2016/04/06/4-6笔记/" rel="next" title="4.6笔记">
+                <i class="fa fa-chevron-left"></i> 4.6笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/30/3-30笔记/" rel="prev" title="3.30笔记">
-                3.30笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
