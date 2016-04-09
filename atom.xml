@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-09T13:16:32.823Z</updated>
+  <updated>2016-04-09T15:30:48.336Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>4.9笔记</title>
+    <link href="http://yoursite.com/2016/04/09/4-9%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/04/09/4-9笔记/</id>
+    <published>2016-04-09T13:21:28.000Z</published>
+    <updated>2016-04-09T15:30:48.336Z</updated>
+    
+    <content type="html">&lt;p&gt;offsetLeft[Top]:只读 属性 当前元素到定位父级的（偏移值）&lt;br&gt;        到当前元素的offsetParent的距离&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;如果没有定位父级
+    offsetParent -&amp;gt; body
+    offsetLeft -&amp;gt;html
+
+如果有定位父级
+    ie7以下:如果自己没有定位，那么offsetLeft[Top]是到body的距离
+            如果自己有定位，那么就是到定位父级的距离
+    其他:到定位父级的距离
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;width height&lt;br&gt;    style.width：样式宽&lt;br&gt;    clientWidth：可视区宽&lt;br&gt;    offsetWidth：占位宽&lt;br&gt;alert(oDiv.style.width);&lt;br&gt;alert(oDiv.clientWidth);//样式宽+padding 120&lt;br&gt;alert(oDiv.offsetWidth);//样式宽+padding+border 可视区宽+边框 122&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      4.9笔记
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>4.8笔记</title>
@@ -396,25 +424,6 @@ DOM节点的类型有很多种 12种
     <updated>2016-03-21T18:01:45.743Z</updated>
     
     <content type="html">&lt;p&gt;抓紧时间，都看看书，有时间做做任务，有空多在群里讨论，适当的看看毕业设计。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      反思
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>3.20笔记</title>
-    <link href="http://yoursite.com/2016/03/21/3-20%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/03/21/3-20笔记/</id>
-    <published>2016-03-20T17:28:24.000Z</published>
-    <updated>2016-03-20T17:37:41.069Z</updated>
-    
-    <content type="html">&lt;p&gt;p标签设置字体后所在位置会发生变化，边框虽然相对应，但是用定位比较不好弄。这是个问题，还有就是文字间距，不知道怎么设置。&lt;/p&gt;
 </content>
     
     <summary type="html">
