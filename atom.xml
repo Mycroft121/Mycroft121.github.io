@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-09T15:30:48.336Z</updated>
+  <updated>2016-04-10T18:18:48.416Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,59 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>4.10笔记</title>
+    <link href="http://yoursite.com/2016/04/11/4-10%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/04/11/4-10笔记/</id>
+    <published>2016-04-10T18:15:21.000Z</published>
+    <updated>2016-04-10T18:18:48.416Z</updated>
+    
+    <content type="html">&lt;p&gt;var name = ‘value’;&lt;br&gt;    //oText.name;有问题&lt;br&gt;    //oText[name];OK&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/*
+    元素.getAttribute(属性名称);方法 获取指定元素的指定属性的值
+*/
+//alert(oText.getAttribute(&amp;apos;value&amp;apos;));
+/*
+    元素.setAttribute(属性名称，属性值);方法 给指定元素指定的属性设置值
+*/
+//oText.setAttribute(&amp;apos;value&amp;apos;,&amp;apos;HELLO&amp;apos;);
+/*
+    元素.removeAttribute(属性名称);方法 移除指定的元素的指定的属性
+*/
+//oText.removeAttribute(&amp;apos;value&amp;apos;);
+/*
+    1.用.和[]的形式无法操作元素的自定义属性
+    getAttribute可以操作元素的自定义属性
+*/
+//alert(oText._name_);
+alert(oText.getAttribute(&amp;apos;_name_&amp;apos;));
+
+var oImg = document.getElementById(img1);
+/*
+    2.可以获取元素属性实际的值
+*/
+//alert(oImg.src);
+//alert(oImg[src]);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;document.createElement(标签名称);创建元素&lt;br&gt;父级.removeChild(要删除的元素); 删除元素&lt;br&gt;//添加到页面中&lt;br&gt;    /&lt;em&gt;&lt;br&gt;        父级.appendChild(要添加的元素) 方法 追加子元素
+    &lt;/em&gt;/&lt;br&gt;    //oUl.appendChild(oLi);&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/*
+    父级.insertBefore(新的元素，被插入的元素)方法 在指定的元素前面插入一个新元素
+    在ie下如果第二个参数的节点不存在，会报错
+    在其他标准浏览器下如果第二个参数的节点不存在，则会以appenChild的形添加式进行
+*/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;父级.replaceChild(新节点，被替换节点) 替换子节点&lt;/p&gt;
+&lt;p&gt;appendChild,insertBefore,replaceChild都可以操作动态创建出来的节点，也可以操作已有节点&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      4.10笔记
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>4.9笔记</title>
@@ -410,25 +463,6 @@ DOM节点的类型有很多种 12种
     <summary type="html">
     
       栅栏响应式布局
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>3.21笔记</title>
-    <link href="http://yoursite.com/2016/03/22/3-21%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/03/22/3-21笔记/</id>
-    <published>2016-03-21T18:00:02.000Z</published>
-    <updated>2016-03-21T18:01:45.743Z</updated>
-    
-    <content type="html">&lt;p&gt;抓紧时间，都看看书，有时间做做任务，有空多在群里讨论，适当的看看毕业设计。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      反思
     
     </summary>
     

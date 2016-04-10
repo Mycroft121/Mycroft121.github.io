@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="标签 选择器">
+<meta name="description" content="4.10笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="3.14笔记">
-<meta property="og:url" content="http://yoursite.com/2016/03/14/3-14笔记/index.html">
+<meta property="og:title" content="4.10笔记">
+<meta property="og:url" content="http://yoursite.com/2016/04/11/4-10笔记/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="标签 选择器">
-<meta property="og:updated_time" content="2016-03-14T11:32:46.830Z">
+<meta property="og:description" content="4.10笔记">
+<meta property="og:updated_time" content="2016-04-10T18:18:48.416Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="3.14笔记">
-<meta name="twitter:description" content="标签 选择器">
+<meta name="twitter:title" content="4.10笔记">
+<meta name="twitter:description" content="4.10笔记">
 
 
 
@@ -86,7 +86,7 @@
   };
 </script>
 
-  <title> 3.14笔记 | Hexo </title>
+  <title> 4.10笔记 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +206,7 @@
             
             
               
-                3.14笔记
+                4.10笔记
               
             
           </h1>
@@ -218,8 +218,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-14T19:31:15+08:00" content="2016-03-14">
-              2016-03-14
+            <time itemprop="dateCreated" datetime="2016-04-11T02:15:21+08:00" content="2016-04-11">
+              2016-04-11
             </time>
           </span>
 
@@ -245,10 +245,41 @@
       
 
       
-        <p>a 链接 herf 页面地址的话 (跳转页面)<br>a 链接 压缩包 (下载)<br>  herf 写的是id的话，点击之后会直接跳转到id所在位置</p>
-<p>target=”_blank” 新窗口打开<br>target=”_self” 当前窗口打开</p>
-<p>常见标签 section header nav footer ul ol img dt,dd(自定义列表)</p>
-<p>选择器 id选择器 class选择器 类型选择器 包含选择器 群组选择器 通配符选择器</p>
+        <p>var name = ‘value’;<br>    //oText.name;有问题<br>    //oText[name];OK</p>
+<pre><code>/*
+    元素.getAttribute(属性名称);方法 获取指定元素的指定属性的值
+*/
+//alert(oText.getAttribute(&apos;value&apos;));
+/*
+    元素.setAttribute(属性名称，属性值);方法 给指定元素指定的属性设置值
+*/
+//oText.setAttribute(&apos;value&apos;,&apos;HELLO&apos;);
+/*
+    元素.removeAttribute(属性名称);方法 移除指定的元素的指定的属性
+*/
+//oText.removeAttribute(&apos;value&apos;);
+/*
+    1.用.和[]的形式无法操作元素的自定义属性
+    getAttribute可以操作元素的自定义属性
+*/
+//alert(oText._name_);
+alert(oText.getAttribute(&apos;_name_&apos;));
+
+var oImg = document.getElementById(img1);
+/*
+    2.可以获取元素属性实际的值
+*/
+//alert(oImg.src);
+//alert(oImg[src]);
+</code></pre><p>document.createElement(标签名称);创建元素<br>父级.removeChild(要删除的元素); 删除元素<br>//添加到页面中<br>    /<em><br>        父级.appendChild(要添加的元素) 方法 追加子元素
+    </em>/<br>    //oUl.appendChild(oLi);</p>
+<pre><code>/*
+    父级.insertBefore(新的元素，被插入的元素)方法 在指定的元素前面插入一个新元素
+    在ie下如果第二个参数的节点不存在，会报错
+    在其他标准浏览器下如果第二个参数的节点不存在，则会以appenChild的形添加式进行
+*/
+</code></pre><p>父级.replaceChild(新节点，被替换节点) 替换子节点</p>
+<p>appendChild,insertBefore,replaceChild都可以操作动态创建出来的节点，也可以操作已有节点</p>
 
       
     </div>
@@ -266,17 +297,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/13/the-blog-about/" rel="next" title="the blog about">
-                <i class="fa fa-chevron-left"></i> the blog about
+              <a href="/2016/04/09/4-9笔记/" rel="next" title="4.9笔记">
+                <i class="fa fa-chevron-left"></i> 4.9笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/15/3-15块和内嵌/" rel="prev" title="3.15块和内嵌">
-                3.15块和内嵌 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
