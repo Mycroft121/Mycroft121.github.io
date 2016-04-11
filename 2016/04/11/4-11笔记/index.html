@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="3.27笔记">
+<meta name="description" content="4.11笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="3.27笔记">
-<meta property="og:url" content="http://yoursite.com/2016/03/28/3-27笔记/index.html">
+<meta property="og:title" content="4.11笔记">
+<meta property="og:url" content="http://yoursite.com/2016/04/11/4-11笔记/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="3.27笔记">
-<meta property="og:updated_time" content="2016-03-28T14:42:02.296Z">
+<meta property="og:description" content="4.11笔记">
+<meta property="og:updated_time" content="2016-04-11T15:50:03.634Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="3.27笔记">
-<meta name="twitter:description" content="3.27笔记">
+<meta name="twitter:title" content="4.11笔记">
+<meta name="twitter:description" content="4.11笔记">
 
 
 
@@ -86,7 +86,7 @@
   };
 </script>
 
-  <title> 3.27笔记 | Hexo </title>
+  <title> 4.11笔记 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +206,7 @@
             
             
               
-                3.27笔记
+                4.11笔记
               
             
           </h1>
@@ -218,8 +218,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-28T22:31:07+08:00" content="2016-03-28">
-              2016-03-28
+            <time itemprop="dateCreated" datetime="2016-04-11T23:36:15+08:00" content="2016-04-11">
+              2016-04-11
             </time>
           </span>
 
@@ -245,7 +245,55 @@
       
 
       
-        <p>计划，两周以内完成.net的相关文件的阅读，每天出去走走，多运动，少躺着。倒计时14天，剩14天。</p>
+        <p>window.onload = function(){<br>            var oDiv1 = document.getElementById(‘div1’);<br>            var oDiv2 = document.getElementById(‘div2’);</p>
+<pre><code>    addClass(oDiv1,&apos;box&apos;);
+    removeClass(oDiv2,&apos;box1&apos;);
+
+    function addClass(obj,className){
+        //如果原来没有class
+        if(obj.className==&apos;&apos;){
+            obj.className = className;
+        }else{
+        //如果原本有calss
+            //如果要添加的class在原来的class中不存在
+            var arrClassName = obj.className.split(&apos; &apos;);
+            var _index = arrIndexOf(arrClassName,className);
+            //obj.className += &apos; &apos;+ className;
+            if (_index ==-1) {
+                //如果添加的class在原来的class中存在
+                obj.className += &apos; &apos;+className;
+            }                        
+                //如果要添加的class在原来的class中存在
+        }
+    }
+
+    function removeClass(obj,className){
+        //如果原来有class
+        if(obj.class !=&apos;&apos;){
+            var arrClassName = obj.className.split(&apos; &apos;);
+            var _index = arrIndexOf(arrClassName,className);
+            //如果有我们要移除的class
+            if (_index != -1) {
+                arrClassName.splice(_index,1);
+                obj.className = arrClassName.join(&apos; &apos;);
+            }
+        }
+        //如果原来没有class
+    }    
+
+    function arrIndexOf(arr, v){
+        for(var i = 0;i&lt; arr.length;i++){
+            if (arr[i] == v) {
+                return i;
+            }
+        }
+        return -1;
+    }
+}
+</code></pre><p>/<em><br>        thead    :  表格头<br>        tBodies    :  表格正文<br>        tFoot    :  表格尾<br>            rows    :  行<br>            rows    :  列
+</em>/</p>
+<p>//onchange：当值发生改变的时候触发<br>            /<em><br>                text : 当光标移开的时候，内容有变化就会触发<br>                radio/checkbox : 标准下点击的时候只要值变了就会触发<br>                        非标准下是离开的时候如果值变了就会触发
+            </em>/</p>
 
       
     </div>
@@ -263,17 +311,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/26/3-26flexbox/" rel="next" title="3.26flexbox">
-                <i class="fa fa-chevron-left"></i> 3.26flexbox
+              <a href="/2016/04/11/4-10笔记/" rel="next" title="4.10笔记">
+                <i class="fa fa-chevron-left"></i> 4.10笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/28/3-28笔记/" rel="prev" title="3.28笔记">
-                3.28笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
