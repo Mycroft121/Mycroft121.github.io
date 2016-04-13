@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="函数封装">
+<meta name="description" content="4.13笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="4.3笔记">
-<meta property="og:url" content="http://yoursite.com/2016/04/03/4-3笔记/index.html">
+<meta property="og:title" content="4.13笔记">
+<meta property="og:url" content="http://yoursite.com/2016/04/13/4-13笔记/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="函数封装">
-<meta property="og:updated_time" content="2016-04-03T13:38:46.797Z">
+<meta property="og:description" content="4.13笔记">
+<meta property="og:updated_time" content="2016-04-13T15:05:21.355Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="4.3笔记">
-<meta name="twitter:description" content="函数封装">
+<meta name="twitter:title" content="4.13笔记">
+<meta name="twitter:description" content="4.13笔记">
 
 
 
@@ -86,7 +86,7 @@
   };
 </script>
 
-  <title> 4.3笔记 | Hexo </title>
+  <title> 4.13笔记 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +206,7 @@
             
             
               
-                4.3笔记
+                4.13笔记
               
             
           </h1>
@@ -218,8 +218,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-03T21:30:40+08:00" content="2016-04-03">
-              2016-04-03
+            <time itemprop="dateCreated" datetime="2016-04-13T23:00:25+08:00" content="2016-04-13">
+              2016-04-13
             </time>
           </span>
 
@@ -245,7 +245,61 @@
       
 
       
-        <p>先写出主要功能，然后放进函数里，吧可变的提取出来，用参数替代。<br>遇到正负的参数，可以采用if语句判断<br>if（endFn）{<br>  endFn（）;<br>};<br>等价于endFn&amp;&amp;endFn();如果前面为真，就执行后面一个函数；<br>上述代码是用来用函数回调的。<br>function getStyle ( obj, attr ) { return obj.currentStyle?obj.currentStyle[attr] : getComputedStyle( obj )[attr]; }<br>上面函数用来获取style里的数值</p>
+        <p>/<em><br>    事件冒泡 : 当一个元素接收到事件的时候，会把他接收到的所有传播给他的父级，一直到顶层window。事件冒泡机制
+</em>/<br>阻止冒泡 : 当前要阻止冒泡的事件函数中调用 event.cancelBubble = true</p>
+<p>//给一个对象绑定一个事件处理函数的第一种形式<br>        //obj.onclick = fn;<br>        function fn1(){<br>            alert(1);<br>        }<br>        function fn2(){<br>            alert(1);<br>        }</p>
+<pre><code>document.onclick = fn1;
+document.onclick = fn2;//会覆盖前面绑定的fn1
+
+//给对象的同一个事件绑定多个不同的函数
+//给一个元素绑定事件函数的第二种形式
+
+/*
+    ie: obj.attachEvent(事件名称，事件函数);
+        1.没有捕获
+        2.事件名称有on
+        3.事件函数执行的顺序 : 标准ie-&gt;正序 非标准ie-&gt;倒序
+        4.this指向window
+    标准: obj.addEventListener(事件名称，事件函数，是否捕获);
+        1.有捕获
+        2.事件名称没有on
+        3.事件执行的顺序是正序
+        4.this触发该事件的对象
+*/
+
+// document.attachEvent(&apos;onclick&apos;,function(){
+//     fn1.call(document);
+// });
+// document.attachEvent(&apos;onclick&apos;,fn2);
+
+//是否捕获 : 默认是false  false:冒泡 true:捕获
+
+//document.addEventListener(&apos;click&apos;,fn1,false);
+
+function bind(obj,evname,fn){
+    if(obj.addEventListener){
+        obj.addEventListener(evname,fn,false);
+    }else{
+        obj.attachEvent(&apos;on&apos;+evname,function(){
+            fn.call(obj);
+        });
+    }
+}
+
+bind(documnt,&apos;click&apos;,fn1);
+</code></pre><p>//call 函数下的一个方法,call方法第一个参数可以改变函数执行过程中的内部this的指向,call方法的第二个参数开始就是原来函数的参数列表</p>
+<p>第一种事件绑定形式的取消<br>        /<em><br>            ie : obj.detachEvent(事件名称，事件函数);<br>            标准 : obj.removeEventListener(事件名称，事件函数，是否捕获);
+        </em>/</p>
+<pre><code>/*
+    onkeydown : 当键盘按键按下的时候触发
+    onkeyup : 当键盘按键抬起的时候触发
+
+    event.keyCode : 数字类型 键盘按键的值 键值
+        ctrlKey,shiftKey,altKey 布尔值
+        当一个事件发生的时候，如果ctrl || shift || alt 是按下的状态，返回true, 否则返回false
+*/
+</code></pre><p>//不是所有元素都能够接收键盘事件，能够相应用户输入的元素，能够接收焦点的元素就能够接收键盘事件<br>//onkeydown : 如果按下不抬起，那么就会连续触发</p>
+<p>oncontextmenu : 右键菜单事件，当右键菜单(环境菜单)显示出来的时候触发</p>
 
       
     </div>
@@ -263,17 +317,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/02/4-2笔记/" rel="next" title="4.2笔记">
-                <i class="fa fa-chevron-left"></i> 4.2笔记
+              <a href="/2016/04/12/4-12笔记/" rel="next" title="4.12笔记">
+                <i class="fa fa-chevron-left"></i> 4.12笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/04/05/4-4笔记/" rel="prev" title="4.4笔记">
-                4.4笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
