@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="4.12笔记">
+<meta name="description" content="4.14笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="4.12笔记">
-<meta property="og:url" content="http://yoursite.com/2016/04/12/4-12笔记/index.html">
+<meta property="og:title" content="4.14笔记">
+<meta property="og:url" content="http://yoursite.com/2016/04/14/4-14笔记/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="4.12笔记">
-<meta property="og:updated_time" content="2016-04-12T16:04:28.907Z">
+<meta property="og:description" content="4.14笔记">
+<meta property="og:updated_time" content="2016-04-14T16:26:46.501Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="4.12笔记">
-<meta name="twitter:description" content="4.12笔记">
+<meta name="twitter:title" content="4.14笔记">
+<meta name="twitter:description" content="4.14笔记">
 
 
 
@@ -86,7 +86,7 @@
   };
 </script>
 
-  <title> 4.12笔记 | Hexo </title>
+  <title> 4.14笔记 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +206,7 @@
             
             
               
-                4.12笔记
+                4.14笔记
               
             
           </h1>
@@ -218,8 +218,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-12T23:55:17+08:00" content="2016-04-12">
-              2016-04-12
+            <time itemprop="dateCreated" datetime="2016-04-14T23:24:39+08:00" content="2016-04-14">
+              2016-04-14
             </time>
           </span>
 
@@ -245,50 +245,16 @@
       
 
       
-        <p>/<em><br>    onsubmit: 事件 当提交表单的时候触发<br>        submit(): 方法 提交表单
-</em>/<br>/<em><br>    onreset: 事件 当表单重置的时候触发<br>        reset(): 方法 提交表单
-</em>/<br>open(页面的地址url,打开的方式) 方法 打来一个新的窗口(页面)<br>如果url为空，则默认打开一个空白页面<br>如果打开方式为空，默认为新窗口方式打开<br>返回值：返回新返回的窗口的window对象<br>//window.close();<br>    /<em><br>        1.ff：默认无法关闭<br>        2.chrome：默认直接关闭<br>        3.ie：询问用户
-    </em>/<br>opener.close();<br>    //可以关闭在本窗口中通过js打开的新建窗口</p>
-<p>/<em><br>            window.navigator.userAgent -&gt;浏览器信息
-        </em>/</p>
-<pre><code>//alert(window.navigator.userAgent);
-
-/*if(window.navigator.userAgent.indexOf(&apos;MSIE&apos;)!= -1){
-    alert(&apos;我是ie&apos;);
-}else{
-    alert(&apos;我不是ie&apos;);
-}*/
-
-/*
-    window.location: 浏览器地址信息
+        <p>onmousedown : 选择元素<br>onmousemove : 移动元素<br>onmouseup : 释放元素<br>/<em><br>                1.拖拽的时候，如果有文字被选中，会产生问题<br>                    原因: 当鼠标按下的时候，如果页面中有文字被选中，那么会触发浏览器默认的文字拖拽效果<br>                    解决:<br>                        标准 : 阻止默认行为<br>                        ie : 
+            </em>/<br>释放全局捕获 releaseCapture();</p>
+<p>/设置全局捕获，当我们给一个元素设置全局捕获以后，那么这个元素就会监听后续发生的所有事件，当有事件发生的时候，就会被当前设置了全局捕获的元素所触发</p>
+<pre><code>/*
+    ie : 有，并且有效果
+    ff : 有，但是没效果
+    chrome : 没有
 */
-
-var arr = [1,2,3];
-//alert(typeof arr);
-
-//alert(window.location);
-
-//window.location.href: url
-//alert(window.location.href);
-
-//window.location.search : url?后面的内容
-//alert(window.location.search);
-
-//window.location.hash : url#后面的内容
-//alert(window.location.hash);
-</code></pre><p>可视区的尺寸<br>    document.documentElement.clientWidth<br>    document.documentElement.clientHeight</p>
-<p>滚动条滚动距离<br>    document.documentElement.scrollTop<br>/*</p>
-<p>onscroll: 当滚动条滚动的时候触发<br>onresize: 当窗口大小发生改变的时候触发</p>
-<p>焦点 : 使浏览器能够区分用户输入的对象，当一个元素有焦点的时候，那么他就可以接受用户的输入。<br>我们可以通过一些方式给元素设置焦点<br>    1.点击<br>    2.tab<br>    3.js</p>
-<pre><code>不是所有元素都能接收焦点的，能够响应用户操作的元素才有焦点
-</code></pre><p>*/</p>
-<p>onfocus : 当元素获取到焦点的时候触发<br>onblur : 当元素失去焦点的时候触发</p>
-<p>obj.focus() 给指定的元素设置焦点<br>obj.blur() 取消指定元素的焦点<br>obj.select() 选择指定元素里面的文本内容内容</p>
-<p>event : 事件对象，当一个事件发生的时候，和当前这个对象发生的这个事件有关的一些详细的信息都会被临时保存到一个指定的-event对象，供我们在需要的调试。飞机-黑匣子</p>
-<p>事件对象必须在一个事件调用的函数里面使用才有内容<br>事件函数 : 事件调用的函数</p>
-<p>兼容<br>ie/chrome : event是一个内置全局对象<br>ff : 事件对象是通过事件函数的第一个参数传入的</p>
-<p>如果一个函数是被事件调用的，那么这个函数定义的第一个参数就是事件对象</p>
-<p>clientX[Y] : 鼠标到页面可视区的距离</p>
+</code></pre><p>/<em><br>                1.拖拽的时候，如果有文字被选中，会产生问题<br>                    原因: 当鼠标按下的时候，如果页面中有文字被选中，那么会触发浏览器默认的文字拖拽效果<br>                    解决:<br>                        标准 : 阻止默认行为<br>                        非标准ie :<br>                    拖拽图片会有问题，原因，解决方法同上
+            </em>/</p>
 
       
     </div>
@@ -306,17 +272,13 @@ var arr = [1,2,3];
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/11/4-11笔记/" rel="next" title="4.11笔记">
-                <i class="fa fa-chevron-left"></i> 4.11笔记
+              <a href="/2016/04/13/4-13笔记/" rel="next" title="4.13笔记">
+                <i class="fa fa-chevron-left"></i> 4.13笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/04/13/4-13笔记/" rel="prev" title="4.13笔记">
-                4.13笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

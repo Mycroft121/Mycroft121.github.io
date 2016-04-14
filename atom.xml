@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-13T15:05:21.355Z</updated>
+  <updated>2016-04-14T16:26:46.501Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>4.14笔记</title>
+    <link href="http://yoursite.com/2016/04/14/4-14%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/04/14/4-14笔记/</id>
+    <published>2016-04-14T15:24:39.000Z</published>
+    <updated>2016-04-14T16:26:46.501Z</updated>
+    
+    <content type="html">&lt;p&gt;onmousedown : 选择元素&lt;br&gt;onmousemove : 移动元素&lt;br&gt;onmouseup : 释放元素&lt;br&gt;/&lt;em&gt;&lt;br&gt;                1.拖拽的时候，如果有文字被选中，会产生问题&lt;br&gt;                    原因: 当鼠标按下的时候，如果页面中有文字被选中，那么会触发浏览器默认的文字拖拽效果&lt;br&gt;                    解决:&lt;br&gt;                        标准 : 阻止默认行为&lt;br&gt;                        ie : 
+            &lt;/em&gt;/&lt;br&gt;释放全局捕获 releaseCapture();&lt;/p&gt;
+&lt;p&gt;/设置全局捕获，当我们给一个元素设置全局捕获以后，那么这个元素就会监听后续发生的所有事件，当有事件发生的时候，就会被当前设置了全局捕获的元素所触发&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/*
+    ie : 有，并且有效果
+    ff : 有，但是没效果
+    chrome : 没有
+*/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;/&lt;em&gt;&lt;br&gt;                1.拖拽的时候，如果有文字被选中，会产生问题&lt;br&gt;                    原因: 当鼠标按下的时候，如果页面中有文字被选中，那么会触发浏览器默认的文字拖拽效果&lt;br&gt;                    解决:&lt;br&gt;                        标准 : 阻止默认行为&lt;br&gt;                        非标准ie :&lt;br&gt;                    拖拽图片会有问题，原因，解决方法同上
+            &lt;/em&gt;/&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      4.14笔记
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>4.13笔记</title>
@@ -574,25 +602,6 @@ DOM节点的类型有很多种 12种
     <summary type="html">
     
       flexbox
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>3.25遮罩层的设置</title>
-    <link href="http://yoursite.com/2016/03/25/3-25%E9%81%AE%E7%BD%A9%E5%B1%82%E7%9A%84%E8%AE%BE%E7%BD%AE/"/>
-    <id>http://yoursite.com/2016/03/25/3-25遮罩层的设置/</id>
-    <published>2016-03-25T12:08:39.000Z</published>
-    <updated>2016-03-26T12:09:21.601Z</updated>
-    
-    <content type="html">&lt;p&gt;创建一个div&lt;br&gt;在其下包含三个div&lt;br&gt;第一个不动，后两个设置绝对定位，相对于最外层div，第二个可以和最外层设置一样的宽高，给一个背景色，然后给透明度即可。&lt;br&gt;如果调用js，可以让后两个的display为none，触发点击事件后改为block。&lt;br&gt;关于ie的透明度问题可以选用滤镜&lt;br&gt;一般透明效果：filter:alpha(opacity=30);&lt;br&gt;W3C代码：-webkit-filter:opacity(0.3); 或 opacity:0.3;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      遮罩层
     
     </summary>
     
