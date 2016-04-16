@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-15T14:01:30.140Z</updated>
+  <updated>2016-04-16T15:35:11.523Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,66 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>4.16笔记</title>
+    <link href="http://yoursite.com/2016/04/16/4-16%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/04/16/4-16笔记/</id>
+    <published>2016-04-16T15:27:16.000Z</published>
+    <updated>2016-04-16T15:35:11.523Z</updated>
+    
+    <content type="html">&lt;p&gt; console.time(‘hello’);&lt;br&gt; for(var i = 0;i&amp;lt;5000;i++){&lt;br&gt;    oDiv.innerHTML += ‘a’;&lt;br&gt;    }&lt;br&gt; console.timeEnd(‘hello’);&lt;/p&gt;
+&lt;p&gt;var oDiv = document.getElementById();&lt;br&gt;            var oInput = document.getElementById();&lt;br&gt;            var oUl = document.getElementById();&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var doc = document;
+var oDiv = doc.getElementById();
+var oInput = doc.getElementById();
+var oUl = doc.getElementById();
+
+childNodes -&amp;gt; 元素节点、文本节点
+children -&amp;gt; 元素节点
+
+firstChild
+firstElementChild
+
+var oUl = document.getElementById(&amp;apos;ul1&amp;apos;);
+var aLi = oUl.getElementsByTagName(&amp;apos;li&amp;apos;);
+
+var aLi = document.querySelectorAll(&amp;apos;#ul1 li&amp;apos;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;oLi.style.width = ‘100px’;&lt;br&gt;oLi.style.height = ‘100px’;&lt;br&gt;oLi.style.background = ‘red’;&lt;br&gt;oLi.style.cssText = ‘width:100px;height:100px;background:red’;&lt;/p&gt;
+&lt;p&gt;window.onload = function(){&lt;br&gt;            var oDiv = document.getElementById(‘div1’);&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    var L = oDiv.offsetLeft;
+    var T = oDiv.offsetTop;
+
+    setInterval(function(){
+
+        L++;
+        T++;
+
+        oDiv.style.left = L + &amp;apos;px&amp;apos;;
+        oDiv.style.top = T + &amp;apos;px&amp;apos;;
+    },30);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;window.onload = function(){&lt;br&gt;            var oUl = document.getElementById(‘ul1’);&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    var oFrag = document.createDocumentFragment();
+
+    console.time(&amp;apos;hello&amp;apos;);
+    for(var i=0;i&amp;lt;5000;i++){
+        var oLi = document.createElement(&amp;apos;li&amp;apos;);
+        oFrag.appendChild(oLi);
+    }
+    oUl.appendChild(oFrag);
+    console.timeEnd(&amp;apos;hello&amp;apos;);
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      4.16笔记
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>4.15笔记</title>
@@ -594,25 +654,6 @@ DOM节点的类型有很多种 12种
     <summary type="html">
     
       3.28笔记
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>3.27笔记</title>
-    <link href="http://yoursite.com/2016/03/28/3-27%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/03/28/3-27笔记/</id>
-    <published>2016-03-28T14:31:07.000Z</published>
-    <updated>2016-03-28T14:42:02.296Z</updated>
-    
-    <content type="html">&lt;p&gt;计划，两周以内完成.net的相关文件的阅读，每天出去走走，多运动，少躺着。倒计时14天，剩14天。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      3.27笔记
     
     </summary>
     

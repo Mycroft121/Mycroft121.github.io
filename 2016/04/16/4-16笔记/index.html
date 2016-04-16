@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="日记">
+<meta name="description" content="4.16笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="4.4笔记">
-<meta property="og:url" content="http://yoursite.com/2016/04/05/4-4笔记/index.html">
+<meta property="og:title" content="4.16笔记">
+<meta property="og:url" content="http://yoursite.com/2016/04/16/4-16笔记/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="日记">
-<meta property="og:updated_time" content="2016-04-05T15:12:57.281Z">
+<meta property="og:description" content="4.16笔记">
+<meta property="og:updated_time" content="2016-04-16T15:35:11.523Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="4.4笔记">
-<meta name="twitter:description" content="日记">
+<meta name="twitter:title" content="4.16笔记">
+<meta name="twitter:description" content="4.16笔记">
 
 
 
@@ -86,7 +86,7 @@
   };
 </script>
 
-  <title> 4.4笔记 | Hexo </title>
+  <title> 4.16笔记 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +206,7 @@
             
             
               
-                4.4笔记
+                4.16笔记
               
             
           </h1>
@@ -218,8 +218,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-05T23:10:48+08:00" content="2016-04-05">
-              2016-04-05
+            <time itemprop="dateCreated" datetime="2016-04-16T23:27:16+08:00" content="2016-04-16">
+              2016-04-16
             </time>
           </span>
 
@@ -245,8 +245,49 @@
       
 
       
-        <p>这一个 月的总结，活的太累，没有规律，想的太多做的太少，其实做软件这个东西对于经验还是更加重要一些，多做练习。多看书多学习吧。少玩游戏早点休息。</p>
+        <p> console.time(‘hello’);<br> for(var i = 0;i&lt;5000;i++){<br>    oDiv.innerHTML += ‘a’;<br>    }<br> console.timeEnd(‘hello’);</p>
+<p>var oDiv = document.getElementById();<br>            var oInput = document.getElementById();<br>            var oUl = document.getElementById();</p>
+<pre><code>var doc = document;
+var oDiv = doc.getElementById();
+var oInput = doc.getElementById();
+var oUl = doc.getElementById();
 
+childNodes -&gt; 元素节点、文本节点
+children -&gt; 元素节点
+
+firstChild
+firstElementChild
+
+var oUl = document.getElementById(&apos;ul1&apos;);
+var aLi = oUl.getElementsByTagName(&apos;li&apos;);
+
+var aLi = document.querySelectorAll(&apos;#ul1 li&apos;);
+</code></pre><p>oLi.style.width = ‘100px’;<br>oLi.style.height = ‘100px’;<br>oLi.style.background = ‘red’;<br>oLi.style.cssText = ‘width:100px;height:100px;background:red’;</p>
+<p>window.onload = function(){<br>            var oDiv = document.getElementById(‘div1’);</p>
+<pre><code>    var L = oDiv.offsetLeft;
+    var T = oDiv.offsetTop;
+
+    setInterval(function(){
+
+        L++;
+        T++;
+
+        oDiv.style.left = L + &apos;px&apos;;
+        oDiv.style.top = T + &apos;px&apos;;
+    },30);
+}
+</code></pre><p>window.onload = function(){<br>            var oUl = document.getElementById(‘ul1’);</p>
+<pre><code>    var oFrag = document.createDocumentFragment();
+
+    console.time(&apos;hello&apos;);
+    for(var i=0;i&lt;5000;i++){
+        var oLi = document.createElement(&apos;li&apos;);
+        oFrag.appendChild(oLi);
+    }
+    oUl.appendChild(oFrag);
+    console.timeEnd(&apos;hello&apos;);
+}
+</code></pre>
       
     </div>
 
@@ -263,17 +304,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/03/4-3笔记/" rel="next" title="4.3笔记">
-                <i class="fa fa-chevron-left"></i> 4.3笔记
+              <a href="/2016/04/15/4-15笔记/" rel="next" title="4.15笔记">
+                <i class="fa fa-chevron-left"></i> 4.15笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/04/05/4-5笔记/" rel="prev" title="4.5笔记">
-                4.5笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
