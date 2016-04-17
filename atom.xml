@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-16T15:35:11.523Z</updated>
+  <updated>2016-04-17T14:26:08.686Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>4.17笔记</title>
+    <link href="http://yoursite.com/2016/04/17/4-17%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/04/17/4-17笔记/</id>
+    <published>2016-04-17T14:25:38.000Z</published>
+    <updated>2016-04-17T14:26:08.686Z</updated>
+    
+    <content type="html">&lt;p&gt;历史管理&lt;br&gt;onhashchange : 改变hash值来管理&lt;br&gt;history :&lt;br&gt;    -pushState:三个参数:数据 标题(都没有实现) 地址(可选)&lt;br&gt;    -popstate事件:读取数据 event.state&lt;br&gt;    -注意:网址是虚假的，需要在服务器指定对应页面，不然刷新也找不到&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      4.17笔记
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>4.16笔记</title>
@@ -635,25 +654,6 @@ DOM节点的类型有很多种 12种
     <summary type="html">
     
       js做判断
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>3.28笔记</title>
-    <link href="http://yoursite.com/2016/03/28/3-28%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/03/28/3-28笔记/</id>
-    <published>2016-03-28T14:47:40.000Z</published>
-    <updated>2016-03-28T14:56:29.873Z</updated>
-    
-    <content type="html">&lt;p&gt;关于选择器的优先级问题，分四个部分，style，id，类，元素以及：子类等，初始为0000；若含有一个id选择器，则改为0100，以此类推，哪个大，哪个的优先级大。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      3.28笔记
     
     </summary>
     
