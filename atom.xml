@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-17T14:26:08.686Z</updated>
+  <updated>2016-04-18T17:06:26.910Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,81 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>4.18笔记</title>
+    <link href="http://yoursite.com/2016/04/19/4-18%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/04/19/4-18笔记/</id>
+    <published>2016-04-18T17:02:10.000Z</published>
+    <updated>2016-04-18T17:06:26.910Z</updated>
+    
+    <content type="html">&lt;pre&gt;&lt;code&gt;console.log(123);
+
+var i = 0;
+setInterval(function(){
+    i++;
+    console.log(i);
+},1000)
+
+    console.group(&amp;apos;第一组&amp;apos;);
+    console.log(1);
+    console.groupEnd();
+
+    console.group(&amp;apos;第二组&amp;apos;);
+    console.log(2);
+    console.groupEnd();
+
+window.onload = function(){
+        var oDiv = document.getElementById(&amp;apos;div1&amp;apos;);
+
+        console.dirxml(oDiv);//显示当前元素的代码结构
+    }
+
+var a = 0;
+    console.assert(a);
+
+    console.assert(20 == &amp;apos;20&amp;apos;);
+
+console.trace();
+
+console.time(&amp;apos;计时器&amp;apos;);
+
+    for(var i=0;i&amp;lt;100000;i++){
+    }
+
+    console.timeEnd(&amp;apos;计时器&amp;apos;);
+
+
+    function a(){
+        for(var i=0;i&amp;lt;10;i++){
+            b();
+        }
+        for(var i=0;i&amp;lt;5;i++){
+            c(); 
+        }
+
+        function b(){
+            var b = 10;
+        }
+
+        function c(){
+            var c = 20; 
+        }
+    }
+
+    console.profile();
+    a();
+    console.profileEnd();
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      4.18笔记firebug
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>4.17笔记</title>
@@ -635,25 +710,6 @@ DOM节点的类型有很多种 12种
     <summary type="html">
     
       3.30笔记
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>3.29笔记</title>
-    <link href="http://yoursite.com/2016/03/30/3-29%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/03/30/3-29笔记/</id>
-    <published>2016-03-30T11:16:24.000Z</published>
-    <updated>2016-03-30T11:20:53.825Z</updated>
-    
-    <content type="html">&lt;p&gt;js中，图片背景的地址不能做判断&lt;br&gt;颜色值不能做判断&lt;br&gt;相对路径不能zuo’pa判断&lt;br&gt;解决方法：添加一个开关，但是一个开关只能处理一个按钮，但是可以写一个自定义属性aLi[i].Onoff = ‘true’;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      js做判断
     
     </summary>
     

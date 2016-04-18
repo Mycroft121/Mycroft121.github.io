@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="3.27笔记">
+<meta name="description" content="4.18笔记firebug">
 <meta property="og:type" content="article">
-<meta property="og:title" content="3.27笔记">
-<meta property="og:url" content="http://yoursite.com/2016/03/28/3-27笔记/index.html">
+<meta property="og:title" content="4.18笔记">
+<meta property="og:url" content="http://yoursite.com/2016/04/19/4-18笔记/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="3.27笔记">
-<meta property="og:updated_time" content="2016-03-28T14:42:02.296Z">
+<meta property="og:description" content="4.18笔记firebug">
+<meta property="og:updated_time" content="2016-04-18T17:06:26.910Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="3.27笔记">
-<meta name="twitter:description" content="3.27笔记">
+<meta name="twitter:title" content="4.18笔记">
+<meta name="twitter:description" content="4.18笔记firebug">
 
 
 
@@ -86,7 +86,7 @@
   };
 </script>
 
-  <title> 3.27笔记 | Hexo </title>
+  <title> 4.18笔记 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +206,7 @@
             
             
               
-                3.27笔记
+                4.18笔记
               
             
           </h1>
@@ -218,8 +218,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-28T22:31:07+08:00" content="2016-03-28">
-              2016-03-28
+            <time itemprop="dateCreated" datetime="2016-04-19T01:02:10+08:00" content="2016-04-19">
+              2016-04-19
             </time>
           </span>
 
@@ -245,8 +245,64 @@
       
 
       
-        <p>计划，两周以内完成.net的相关文件的阅读，每天出去走走，多运动，少躺着。倒计时14天，剩14天。</p>
+        <pre><code>console.log(123);
 
+var i = 0;
+setInterval(function(){
+    i++;
+    console.log(i);
+},1000)
+
+    console.group(&apos;第一组&apos;);
+    console.log(1);
+    console.groupEnd();
+
+    console.group(&apos;第二组&apos;);
+    console.log(2);
+    console.groupEnd();
+
+window.onload = function(){
+        var oDiv = document.getElementById(&apos;div1&apos;);
+
+        console.dirxml(oDiv);//显示当前元素的代码结构
+    }
+
+var a = 0;
+    console.assert(a);
+
+    console.assert(20 == &apos;20&apos;);
+
+console.trace();
+
+console.time(&apos;计时器&apos;);
+
+    for(var i=0;i&lt;100000;i++){
+    }
+
+    console.timeEnd(&apos;计时器&apos;);
+
+
+    function a(){
+        for(var i=0;i&lt;10;i++){
+            b();
+        }
+        for(var i=0;i&lt;5;i++){
+            c(); 
+        }
+
+        function b(){
+            var b = 10;
+        }
+
+        function c(){
+            var c = 20; 
+        }
+    }
+
+    console.profile();
+    a();
+    console.profileEnd();
+</code></pre>
       
     </div>
 
@@ -263,17 +319,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/26/3-26flexbox/" rel="next" title="3.26flexbox">
-                <i class="fa fa-chevron-left"></i> 3.26flexbox
+              <a href="/2016/04/17/4-17笔记/" rel="next" title="4.17笔记">
+                <i class="fa fa-chevron-left"></i> 4.17笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/28/3-28笔记/" rel="prev" title="3.28笔记">
-                3.28笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
