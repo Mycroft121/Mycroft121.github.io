@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-18T17:06:26.910Z</updated>
+  <updated>2016-04-19T17:19:39.926Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>4.19笔记</title>
+    <link href="http://yoursite.com/2016/04/20/4-19%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/04/20/4-19笔记/</id>
+    <published>2016-04-19T17:18:36.000Z</published>
+    <updated>2016-04-19T17:19:39.926Z</updated>
+    
+    <content type="html">&lt;p&gt;js的跨域:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;www.a.com/a.js
+www.a.com/c/b.js
+
+www.a.com
+www.b.com
+
+ajax : XMLHttpRequest();  :   不能跨域的
+
+1.document.domain = &amp;apos;a.com&amp;apos;;
+
+2.服务器代理 : XMLHttpRequest代理文件
+
+3.script标签 : jsonp
+
+4.location.hash
+
+5.window.name
+
+6.flash
+
+7.html5 postMessage
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      4.19笔记js跨域
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>4.18笔记</title>
@@ -691,25 +731,6 @@ DOM节点的类型有很多种 12种
     <summary type="html">
     
       函数传参，作用域
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>3.30笔记</title>
-    <link href="http://yoursite.com/2016/03/30/3-30%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/03/30/3-30笔记/</id>
-    <published>2016-03-30T11:33:09.000Z</published>
-    <updated>2016-03-30T13:36:15.003Z</updated>
-    
-    <content type="html">&lt;p&gt;aBtn[i].index = i;添加索引值&lt;br&gt;查找数组元素，可以用arrLi.push( aLi[j] );全放到一个数组后再来用循环做点击事件。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      3.30笔记
     
     </summary>
     

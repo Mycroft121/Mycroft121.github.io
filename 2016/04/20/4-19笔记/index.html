@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="页面初始化">
+<meta name="description" content="4.19笔记js跨域">
 <meta property="og:type" content="article">
-<meta property="og:title" content="3.19笔记_页面初始化">
-<meta property="og:url" content="http://yoursite.com/2016/03/19/3-19笔记-页面初始化/index.html">
+<meta property="og:title" content="4.19笔记">
+<meta property="og:url" content="http://yoursite.com/2016/04/20/4-19笔记/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="页面初始化">
-<meta property="og:updated_time" content="2016-03-19T15:29:51.495Z">
+<meta property="og:description" content="4.19笔记js跨域">
+<meta property="og:updated_time" content="2016-04-19T17:19:39.926Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="3.19笔记_页面初始化">
-<meta name="twitter:description" content="页面初始化">
+<meta name="twitter:title" content="4.19笔记">
+<meta name="twitter:description" content="4.19笔记js跨域">
 
 
 
@@ -86,7 +86,7 @@
   };
 </script>
 
-  <title> 3.19笔记_页面初始化 | Hexo </title>
+  <title> 4.19笔记 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +206,7 @@
             
             
               
-                3.19笔记_页面初始化
+                4.19笔记
               
             
           </h1>
@@ -218,8 +218,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-19T23:28:46+08:00" content="2016-03-19">
-              2016-03-19
+            <time itemprop="dateCreated" datetime="2016-04-20T01:18:36+08:00" content="2016-04-20">
+              2016-04-20
             </time>
           </span>
 
@@ -245,8 +245,29 @@
       
 
       
-        <p>body,ul,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select { padding:0; margin:0; font-family:arial; }<br>li { list-style:none; }<br>img { border:none; }<br>a { text-decoration:none; }<br>a:hover { text-decoration:underline; }</p>
+        <p>js的跨域:</p>
+<pre><code>www.a.com/a.js
+www.a.com/c/b.js
 
+www.a.com
+www.b.com
+
+ajax : XMLHttpRequest();  :   不能跨域的
+
+1.document.domain = &apos;a.com&apos;;
+
+2.服务器代理 : XMLHttpRequest代理文件
+
+3.script标签 : jsonp
+
+4.location.hash
+
+5.window.name
+
+6.flash
+
+7.html5 postMessage
+</code></pre>
       
     </div>
 
@@ -263,17 +284,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/18/3-18笔记-兼容性问题/" rel="next" title="3.18笔记_兼容性问题">
-                <i class="fa fa-chevron-left"></i> 3.18笔记_兼容性问题
+              <a href="/2016/04/19/4-18笔记/" rel="next" title="4.18笔记">
+                <i class="fa fa-chevron-left"></i> 4.18笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/21/3-20笔记/" rel="prev" title="3.20笔记">
-                3.20笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
