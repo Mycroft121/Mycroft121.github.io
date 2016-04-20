@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-19T17:19:39.926Z</updated>
+  <updated>2016-04-20T15:34:43.602Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>4.20笔记</title>
+    <link href="http://yoursite.com/2016/04/20/4-20%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/04/20/4-20笔记/</id>
+    <published>2016-04-20T15:32:41.000Z</published>
+    <updated>2016-04-20T15:34:43.602Z</updated>
+    
+    <content type="html">&lt;p&gt;计划改写一边，明天装机，安装好数据库和vs&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      毕业论文倒计时
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>4.19笔记</title>
@@ -712,25 +731,6 @@ DOM节点的类型有很多种 12种
     <summary type="html">
     
       运算符，运算流程
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>3.31笔记</title>
-    <link href="http://yoursite.com/2016/04/01/3-31%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/04/01/3-31笔记/</id>
-    <published>2016-04-01T15:48:58.000Z</published>
-    <updated>2016-04-01T15:51:54.866Z</updated>
-    
-    <content type="html">&lt;p&gt;函数传参问题，可以先把函数写出来，然后合并相同的函数，可变的部分就是参数。&lt;br&gt;作用域问题，for循环里的函数，不能再用到i；函数里i的值会始终是那个最大值。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      函数传参，作用域
     
     </summary>
     
